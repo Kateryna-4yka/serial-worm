@@ -1,0 +1,19 @@
+body {
+  font-family: "Helvetica Neue", "Roboto", "Verdana", "Tahoma", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: inherit;
+  color: rgb(174, 199, 114);
+  background-color: rgb(97, 100, 86);
+}
+.button {
+  color: rgb(247, 211, 9);
+  background-color: rgb(97, 100, 86);
+}
+.button:hover,
+.button:focus {
+  color: rgb(255, 230, 0);
+}
+.button:active {
+  color: rgb(4, 97, 50);
+}
