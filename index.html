@@ -6,66 +6,75 @@
       name="description"
       content="Information about the series The X-Files"
     />
-    <title>The X files</title>
+    <title>SerialWarm</title>
+    <!-- кросбраузерність  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- шрифти-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Зовнішня таблиця стилів -->
     <link rel="stylesheet" href="./css/sryles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/">Serial worm</a>
-          </li>
-          <li>
-            <a href="/">
-              <img
-                src="https://archive.org/download/an-msdn-tv-logo/an-msdn-tv-logo.png"
-                alt="логотип сайту"
-                width="50"
-              />
+    <header class="page-header">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="list-item">
+            <a class="page-logo" href="./index.html">
+              <img src="./images/logo.jpg" alt="логотип сайту" width="50" />
+              Serial <span class="accent-logo">worm</span>
             </a>
           </li>
-          <li>
-            <a href="/">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/67/The_X-Files_logo.svg"
-                alt="логотип серіалу"
-                width="50"
-              />
+          <li class="list-item">
+            <a class="serial-logo" href="./index.html">
+              <img src="./images/logo2.jpeg" alt="логотип серіалу" width="50" />
+              The X files
             </a>
           </li>
-          <li>
-            <a href="#sites">Where to see</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#sites">Where to see</a>
           </li>
-          <li>
-            <a href="#seasons">All seasons</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#seasons">All seasons</a>
           </li>
-          <li>
-            <a href="#believe">Do you believe in UFO?</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#believe"
+              >Do you believe in UFO?</a
+            >
           </li>
-          <li>
-            <a href="#poster">Download poster</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#poster">Download poster</a>
           </li>
-          <li>
-            <a href="#actors">In the main roles</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#actors">In the main roles</a>
           </li>
-          <li>
-            <a href="#Dana">Dana Katherine Scully</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#Dana">Dana Katherine Scully</a>
           </li>
-          <li>
-            <a href="#David">David William Duchovny</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#David">David William Duchovny</a>
           </li>
-          <li>
-            <a href="#contacts">Contacts</a>
+          <li class="list-item">
+            <a class="header-nav-item" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>The X files</h1>
-        <p>
+      <section class="about">
+        <h1 class="about-title">The X files</h1>
+        <p class="about-text">
           «Цілком таємно» або «Секретні матеріали» — американський фантастичний
           телесеріал. Уперше був показаний телеканалом Fox 10 вересня 1993 року
           й завершився через 9 років — 19 травня 2002 року. З 1993 по 2002 рік
@@ -75,13 +84,22 @@
           таємно: Боротьба за майбутнє». 24 липня 2008 року відбулася прем'єра
           фільму «Цілком таємно: Я хочу вірити».
         </p>
+        <ul class="about-list">
+          <li class="about-list-item">
+            <a class="about-nav-item" href="#poster">Download poster</a>
+          </li>
+          <li class="about-list-item">
+            <a class="about-nav-item" href="#actors">In the main roles</a>
+          </li>
+        </ul>
       </section>
 
-      <section>
-        <h2 id="sites">Where to see</h2>
-        <ul>
-          <li>
+      <section class="see">
+        <h2 class="see-title" id="sites">Where to see</h2>
+        <ul class="see-list">
+          <li class="see-list-item">
             <a
+              class="see-list-item-link"
               href="https://inoriginal.net/series/1604-x-files-1993.html"
               target="_blank"
             >
@@ -90,11 +108,17 @@
                 alt="заставка серіалу"
                 width="150"
               />
-              Серіал англійською.
+              Series in English
             </a>
+            <p class="see-list-item-text">
+              Перегляд фільмів та серіалів англійською мовою - один із найкращих
+              способів натренуватися розуміти носіїв англійської. Перевагами є
+              те, що мовлення є природнім і переважно діалогічним.
+            </p>
           </li>
-          <li>
+          <li class="see-list-item">
             <a
+              class="see-list-item-link"
               href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html"
               target="_blank"
             >
@@ -103,11 +127,16 @@
                 alt="заставка серіалу"
                 width="150"
               />
-              Серіал рідненькою.
+              Series in Ukrainian
             </a>
+            <p class="see-list-item-text">
+              Зручний і унікальний у своєму роді кінотеатр для перегляду кіно
+              онлайн українською в комфортних для тебе умовах.
+            </p>
           </li>
-          <li>
+          <li class="see-list-item">
             <a
+              class="see-list-item-link"
               href="https://uaserials.pro/85-cilkom-tayemno-sezon-1.html"
               target="_blank"
             >
@@ -116,16 +145,23 @@
                 alt="заставка серіалу"
                 width="150"
               />
-              Серіал солов'їною.
+              Series in Ukrainian
             </a>
+            <p class="see-list-item-text">
+              Тобі більше ніколи не доведеться шукати якусь вільну хвилинку, щоб
+              знайти підходящі кінотеатри, встигнути купити в касі або
+              забронювати через інтернет квитки на улюблені місця. Все це
+              залишилося позаду, а взамін великі перспективи дивитися фільми
+              онлайн в хорошій HD якості українською мовою.
+            </p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2 id="seasons">All seasons</h2>
-        <ol>
-          <li>
+      <section class="seasons">
+        <h2 class="seasons-title" id="seasons">All seasons</h2>
+        <ol class="seasons-list">
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/0/08/The_X-Files_Season_1_Blu-ray.jpg"
               alt="Обкладинка першого сезону"
@@ -146,7 +182,7 @@
               мільйонів глядачів.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/d/df/The_X-Files_Season_2_Blu-ray.jpg/260px-The_X-Files_Season_2_Blu-ray.jpg"
               alt="Обкладинка другого сезону"
@@ -157,7 +193,7 @@
               «Золотий глобус» в номінації за найкращий драматичний серіал.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/9/97/The_X-Files_Season_3_Blu-ray.jpg/260px-The_X-Files_Season_3_Blu-ray.jpg"
               alt="Обкладинка третього сезону"
@@ -176,7 +212,7 @@
               "Джо Чанґа"
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/d/d3/The_X-Files_Season_4_Blu-ray.jpg/260px-The_X-Files_Season_4_Blu-ray.jpg"
               alt="Обкладинка 4 сезону"
@@ -192,7 +228,7 @@
               номінації за найкращу жіночу роль у драматичному серіалі.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/4/46/The_X-Files_Season_5_Blu-ray.jpg/260px-The_X-Files_Season_5_Blu-ray.jpg"
               alt="Обкладинка 5 сезону"
@@ -203,7 +239,7 @@
               «Золотий глобус» в номінації за найкращий драматичний серіал.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/4/45/The_X-Files_Season_6_Blu-ray.jpg/260px-The_X-Files_Season_6_Blu-ray.jpg"
               alt="Обкладинка 6 сезону"
@@ -214,7 +250,7 @@
               таємно» стартував 8 листопада 1998 року на телеканалі Fox.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/f/f1/The_X-Files_Season_7_Blu-ray.jpg/260px-The_X-Files_Season_7_Blu-ray.jpg"
               alt="Обкладинка 7 сезону"
@@ -222,7 +258,7 @@
             />
             <p>Сьомий сезон стартував 7 листопада 1999 року.</p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/6/61/The_X-Files_Season_8_Blu-ray.jpg/260px-The_X-Files_Season_8_Blu-ray.jpg"
               alt="Обкладинка 8 сезону"
@@ -232,8 +268,7 @@
 
             <p></p>
           </li>
-
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/c/cb/The_X-Files_Season_9_Blu-ray.jpg/260px-The_X-Files_Season_9_Blu-ray.jpg"
               alt="Обкладинка 9 сезону"
@@ -243,7 +278,7 @@
               Дев'ятий сезон «Цілком таємно» стартував 11 листопада 2001 року.
             </p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/3/36/The_X-Files_Season_10_Blu-ray.jpg/260px-The_X-Files_Season_10_Blu-ray.jpg"
               alt="Обкладинка 10 сезону"
@@ -251,7 +286,7 @@
             />
             <p>Десятий сезон стартував 24 січня 2016 року.</p>
           </li>
-          <li>
+          <li class="seasons-list-item">
             <img
               src="https://upload.wikimedia.org/wikipedia/uk/thumb/6/68/The_X-Files_Season_11_Blu-ray.jpg/260px-The_X-Files_Season_11_Blu-ray.jpg"
               alt="Обкладинка 11 сезону"
@@ -262,105 +297,116 @@
         </ol>
       </section>
 
-      <section>
-        <h2 id="believe">Do you believe in UFO?</h2>
-        <button type="button" class="button">I want to believe</button>
-        <button type="button" class="button">I don't believe</button>
+      <section class="believe">
+        <h2 class="believe-title" id="believe">
+          Do you believe in <span class="believe-accent">UFO?</span>
+        </h2>
+        <button type="button" class="believe-button">I want to believe</button>
+        <button type="button" class="believe-button">I don't believe</button>
       </section>
 
-      <section>
-        <h2 id="poster">Download poster</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/1e80b7770a3b58359b8e26583d61d53c.jpg"
-              alt="Герої серіалу"
-              width="300"
-            />
+      <section class="poster">
+        <h2 class="poster-title" id="poster">
+          <span class="poster-accent">Download</span> posters
+        </h2>
+        <ul class="poster-list">
+          <li class="poster-list-item">
             <a
               href="./images/1e80b7770a3b58359b8e26583d61d53c.jpg"
               download="Х файли через роки"
-              >Download
+            >
+              <img
+                src="./images/1e80b7770a3b58359b8e26583d61d53c.jpg"
+                alt="Герої серіалу"
+                width="300"
+              />Download
             </a>
           </li>
-          <li>
-            <img src="./images/675798.jpg" alt="Постер з героями" width="300" />
-            <a href="./images/675798.jpg" download="Постер останнього сезону"
-              >Download
+          <li class="poster-list-item">
+            <a href="./images/675798.jpg" download="Постер останнього сезону">
+              <img
+                src="./images/675798.jpg"
+                alt="Постер з героями"
+                width="300"
+              />Download
             </a>
           </li>
-          <li>
-            <img
-              src="./images/HD-wallpaper-the-x-files-dana-scully-david-duchovny-fox-mulder-gillian-anderson.jpg"
-              alt="Малдер та Скаллі"
-              width="300"
-            />
+          <li class="poster-list-item">
             <a
               href="./images/HD-wallpaper-the-x-files-dana-scully-david-duchovny-fox-mulder-gillian-anderson.jpg"
               download="Малдер та Скаллі"
-              >Download
+            >
+              <img
+                src="./images/HD-wallpaper-the-x-files-dana-scully-david-duchovny-fox-mulder-gillian-anderson.jpg"
+                alt="Малдер та Скаллі"
+                width="300"
+              />Download
             </a>
           </li>
-          <li>
-            <img
-              src="./images/HD-wallpaper-ufo-the-x-files-want-to-believe-text-text-to-x-files-ufo-the-want-believe.jpg"
-              alt="I want to believe"
-              width="300"
-            />
+          <li class="poster-list-item">
             <a
               href="./images/HD-wallpaper-ufo-the-x-files-want-to-believe-text-text-to-x-files-ufo-the-want-believe.jpg"
               download="I want to believe"
-              >Download
+            >
+              <img
+                src="./images/HD-wallpaper-ufo-the-x-files-want-to-believe-text-text-to-x-files-ufo-the-want-believe.jpg"
+                alt="I want to believe"
+                width="300"
+              />Download
             </a>
           </li>
-          <li>
-            <img
-              src="./images/the-x-files-logo-black-tv-wallpaper-preview.jpg"
-              alt="The X files"
-              width="300"
-            />
+          <li class="poster-list-item">
             <a
               href="./images/the-x-files-logo-black-tv-wallpaper-preview.jpg"
               download="The X files"
-              >Download
+            >
+              <img
+                src="./images/the-x-files-logo-black-tv-wallpaper-preview.jpg"
+                alt="The X files"
+                width="300"
+              />Download
             </a>
           </li>
-          <li>
-            <img src="./images/zRnB8am.jpg" alt="Постер" width="300" />
-            <a href="./images/zRnB8am.jpg" download="Постер">Download </a>
+          <li class="poster-list-item">
+            <a href="./images/zRnB8am.jpg" download="Постер">
+              <img src="./images/zRnB8am.jpg" alt="Постер" width="300" />
+              Download
+            </a>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2 id="actors">In the main roles</h2>
-        <h3 id="Dana">Dana Katherine Scully</h3>
-        <ul>
-          <li>
+      <section class="actors">
+        <h2 class="actors-title" id="actors">
+          In the main <span class="actors-accent">roles</span>
+        </h2>
+        <h3 class="dana-title" id="Dana">Dana Katherine Scully</h3>
+        <ul class="dana-list">
+          <li class="dana-list-item">
             <img
               src="https://krasavica.info/uploads/posts/2022-12/1672402483_krasavica-info-p-dana-skalli-pinterest-14.jpg"
               alt="Джиліан Андерсен"
               width="210"
             />
           </li>
-          <li>
+          <li class="dana-list-item">
             <img
               src="./images/gillian-anderson_26.jpg"
               width="150"
               alt="gillian-anderson"
             />
           </li>
-          <li>
+          <li class="dana-list-item">
             <img
               src="./images/upload-GettyImages-153202402-pic_32ratio_600x400-600x400-15252.jpg"
               width="200"
               alt="gillian-anderson"
             />
           </li>
-          <li>
+          <li class="dana-list-item">
             <img src="./images/ga.jpg" width="200" alt="gillian-anderson" />
           </li>
-          <li>
+          <li class="dana-list-item">
             <img
               src=".//images/jn9nH2TWkjNwlsdYxhBzamiuuZp.jpg"
               width="135"
@@ -368,8 +414,8 @@
             />
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="dana-list-link">
+          <li class="dana-list-link-item">
             <a href="https://www.instagram.com/gilliana/" target="_blank">
               <img
                 src="https://e7.pngegg.com/pngimages/625/732/png-clipart-computer-icons-sticker-instagram-text-trademark-thumbnail.png"
@@ -379,7 +425,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="dana-list-link-item">
             <a href="https://ua.kinorium.com/name/96/" target="_blank">
               <img
                 src="./images/Screenshot_1.jpg"
@@ -389,7 +435,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="dana-list-link-item">
             <a
               href="https://suspilne.media/culture/773351-ak-zinki-uavlaut-seks-koli-mozut-buti-anonimnimi-u-vidavnictvi-se-odnu-storinku-vijde-knizka-dzillian-anderson/"
               target="_blank"
@@ -402,7 +448,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="dana-list-link-item">
             <a
               href="https://tsn.ua/glamur/zirka-sekretnih-materialiv-anderson-pro-svoyu-poyizdku-do-ukrayini-bombi-padayut-na-ditey-ya-bachila-na-vlasni-ochi-2424208.html"
               target="_blank"
@@ -416,54 +462,52 @@
             </a>
           </li>
         </ul>
-        <p>
+        <p class="dana-text">
           Дейна Кетрін Скаллі (англ. Dana Katherine Scully) — персонажка
           фантастичної франшизи навколо телесеріалу «Цілком таємно», втілена
           Джилліан Андерсон. Спеціальна агентка ФБР, феміністська ікона. В
           перекладі телеканалу 1+1 ім'я звучить як Дейна, втім у пізнішому
           перекладі телеканалу СТБ використовувався варіант Дана.
         </p>
-      </section>
-      <section>
-        <h3 id="David">David William Duchovny</h3>
-        <ul>
-          <li>
+        <h3 class="david-title" id="David">David William Duchovny</h3>
+        <ul class="david-list">
+          <li class="david-list-item">
             <img
               src="https://static.espreso.tv/uploads/article/21904/images/im578x383-duchovny_148.jpg?id=1723636671"
               alt="Девід Духовний"
               width="200"
             />
           </li>
-          <li>
+          <li class="david-list-item">
             <img
               src="./images/photoeditorsdk-export.png"
               alt="Девід Духовний"
               width="150"
             />
           </li>
-          <li>
+          <li class="david-list-item">
             <img
               src="./images/1564007205170329586.jpg"
               alt="Девід Духовний"
               width="130"
             />
           </li>
-          <li>
+          <li class="david-list-item">
             <img
               src="./images/abdc4d96-20b7f30e220f98cbd21999b33598fcaf.jpg"
               alt="Девід Духовний"
               width="200"
             />
           </li>
-          <li>
+          <li class="david-list-item">
             <img src="./images/dd_009.jpg" alt="Девід Духовний" width="150" />
           </li>
-          <li>
+          <li class="david-list-item">
             <img src="./images/images.jfif" alt="Девід Духовний" width="150" />
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="david-list-link">
+          <li class="david-list-link-item">
             <a href="https://www.instagram.com/davidduchovny/" target="_blank">
               <img
                 src="https://e7.pngegg.com/pngimages/625/732/png-clipart-computer-icons-sticker-instagram-text-trademark-thumbnail.png"
@@ -473,7 +517,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="david-list-link-item">
             <a href="https://ua.kinorium.com/name/141/" target="_blank">
               <img
                 src="./images/Screenshot_1.jpg"
@@ -483,7 +527,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="david-list-link-item">
             <a
               href="https://www.yakaboo.ua/ua/author/view/Djevid_Duhovny?srsltid=AfmBOoohzzBAONtsxmfROI6UCDnJV10zNx47RXJ3ONzQc_-ii478tBdv"
               target="_blank"
@@ -496,7 +540,7 @@
               />
             </a>
           </li>
-          <li>
+          <li class="david-list-link-item">
             <a
               href="https://uaserial.tv/selection/all/actor-david-duchovny"
               target="_blank"
@@ -510,7 +554,7 @@
             </a>
           </li>
         </ul>
-        <p>
+        <p class="david-text">
           Фокс Малдер (1-7, 10-11 сезон — головний персонаж; 8-9 сезон —
           другорядний) — роль виконав Девід Духовни. Малдер — спеціальний агент
           ФБР, закінчив Оксфордський університет і академію ФБР в Квантіко з
@@ -521,45 +565,23 @@
           обставин. Дослідження цих справ він зробив головною метою свого життя.
           Після викрадення прибульцями наприкінці 7 сезону роль Малдера в
           серіалі зменшилася. Його місце зайняв спеціальний агент Джон Доггетт.
-          Має спільного з Дейною Скаллі сина Вільяма. З'являвся в епізоді
-          серіалу «Самотні стрільці» і в обох фільмах за мотивами серіалу. В 10
-          сезоні Малдер знову повертається працювати в ФБР.
+          Має спільного з Дейною Скаллі сина Вільяма.З'являвся в епізоді серіалу
+          «Самотні стрільці» і в обох фільмах за мотивами серіалу. В 10 сезоні
+          Малдер знову повертається працювати в ФБР.
         </p>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a href="#sites">Where to see</a>
-          </li>
-          <li>
-            <a href="#seasons">All seasons</a>
-          </li>
-          <li>
-            <a href="#believe">Do you believe in UFO?</a>
-          </li>
-          <li>
-            <a href="#poster">Download poster</a>
-          </li>
-          <li>
-            <a href="#actors">In the main roles</a>
-          </li>
-          <li>
-            <a href="#Dana">Dana Katherine Scully</a>
-          </li>
-          <li>
-            <a href="#David">David William Duchovny</a>
-          </li>
-        </ul>
-      </nav>
-      <p>
-        The best information about series and stars on our website. Serial worm
+    <footer class="page-footer">
+      <p class="footer-text">
+        The best information about series and stars on our website.             
+          <a class="page-logo" href="./index.html">
+          Serial <span class="accent-logo">worm</span>
+          </a>
         knows all about the best serials.
       </p>
-      <h2 id="contacts">Contacts</h2>
-      <ul>
+      <h2 class="address-title" id="address">Contacts us</h2>
+      <ul class="address-list">
         <li>
           <a href="tel:+380937755453">+380937755453 </a>
         </li>
@@ -568,62 +590,112 @@
             >Serial_worm2024@gmail.com
           </a>
         </li>
-        <li>
-          <a href="" target="_blank">
-            <img
-              src="https://e7.pngegg.com/pngimages/625/732/png-clipart-computer-icons-sticker-instagram-text-trademark-thumbnail.png"
-              alt="instafram"
-              width="50"
-              height="50"
+        <nav class="footer-nav">
+        <ul class="footer-list"></ul>
+          <li class="list-item">
+            <a class="page-logo" href="./index.html">
+              <img src="./images/logo.jpg" alt="логотип сайту" width="50" />
+              Serial <span class="accent-logo">worm</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="serial-logo" href="./index.html">
+              <img src="./images/logo2.jpeg" alt="логотип серіалу" width="50" />
+              The X files
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#sites">Where to see</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#seasons">All seasons</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#believe"
+              >Do you believe in UFO?</a
+            >
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#poster">Download poster</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#actors">In the main roles</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#Dana">Dana Katherine Scully</a>
+          </li>
+          <li class="list-item">
+            <a class="footer-nav-item" href="#David">David William Duchovny</a>
+          </li>
+        </ul>
+      <nav>
+        <ul>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://uaserial.com/the-x-files/season-1-ad" 
+            target="_blank">
+              <img
+                src="./images/Screenshot_6.jpg"
+                alt="uaserial"
+              width="100"
             />
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
+            </a>
+          </li>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://eneyida.tv/1635-cilkom-tayemno-sekretni-materialy.html" target="_blank">
             <img
-              src="./images/твіттер.png"
-              alt="twetter"
-              width="50"
-              height="50"
+              src="./images/Screenshot_7.jpg"
+              alt="eneyida"
+              width="100"
             />
-          </a>
-        </li>
-        <li>
-          <a href="/" target="_blank">
-            <img src="./images/qtv.png" alt="QTV" width="50" height="50" />
-          </a>
-        </li>
-        <li>
-          <a href="/" target="_blank">
-            <img
-              src="./images/Screenshot_3.jpg"
-              alt="TCH"
-              width="50"
-              height="50"
+            </a>
+          </li>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://kinoukr.com/3323-cilkom-tayemno.html" 
+            target="_blank">
+            <img 
+              src="./images/Screenshot_8.jpg" 
+              alt="kinoukr" 
+              width="100"
             />
-          </a>
-        </li>
-        <li>
-          <a href="/" target="_blank">
+            </a>
+          </li>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://uaserial.tv/the-x-files/season-1-aa" 
+            target="_blank">
             <img
-              src="./images/Screenshot_5.jpg"
+              src="./images/Screenshot_9.jpg"
               alt="uaserial"
-              width="50"
-              height="50"
+              width="100"
             />
-          </a>
-        </li>
-        <li>
-          <a href="/" target="_blank">
+            </a>
+          </li>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://uakino.me/seriesss/detective_series/6650-sekretn-materali-clkom-tayemno.html" target="_blank">
             <img
-              src="./images/Screenshot_1.jpg"
-              alt="kinoplay"
-              width="50"
-              height="50"
+              src="./images/Screenshot_10.jpg"
+              alt="uakino"
+              width="100"
             />
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+          <li>
+            <a class="footer-nav-item" 
+            href="https://mixfilm.net/serial/2812-mx-sekretnye-materialy.html" 
+            target="_blank">
+            <img
+              src="./images/Screenshot_11.jpg"
+              alt="mixfilm"
+              width="100"
+            />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
