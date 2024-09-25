@@ -13,11 +13,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* зміна курсону при наведенні на кнопки*/
+/* зміна курсону при наведенні на кнопки, успадкування тексту та кольору*/
 button {
   cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
 }
-/* Скидання відступів у заголовків*/
+/* успадкування шрифту для input form*/
+.input {
+  font-family: inherit;
+}
+/* Скидання відступів у заголовків та параграфів*/
 h1,
 h2,
 h3,
@@ -28,122 +34,322 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* картинки стають блоковими та підганяються під контейнер */
+img {
+  display: block;
+  max-width: 100%;
+}
 /* налаштування для БОДІ. Всі спільні значення для всієї сторінки*/
 body {
   font-family: 'Montserrat', sans-serif;
   color: #111111;
-  background: #c1c1cc;
+  background-color: #717077;
 }
-/* логотип*/
-.page-logo,
-.serial-logo {
+/* надаємо глобальний контейнер з падінгами, як з макету, та авто марджинами зліва-зправа*/
+.container {
+  max-width: 1750px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* приховані елементи */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*================header================*/
+.header {
+  padding-top: 10px;
+  position: fixed;
+  z-index: 999;
+}
+
+.header-nav-list {
+  display: flex;
+  column-gap: 8px;
+  row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
-  letter-spacing: -0.03em;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(83, 83, 83);
+  color: rgb(6, 180, 143);
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  border: 1px solid rgb(6, 180, 143);
+  border-radius: 15px;
+  transition-property: color, border, background-color;
+  transition-duration: 250ms, 400ms, 250ms;
+  transition-timing-function: ease-in-out;
+  max-height: 38px;
 }
-.accent-logo,
-.believe-accent,
-.poster-accent,
-.actors-accent {
-  font-style: italic;
-  color: rgb(1, 137, 248);
+
+.logo {
+  display: flex;
+  align-items: center;
 }
-.header-nav-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
+.worm {
+  fill: rgb(173, 119, 2);
 }
-.header-nav a:focus,
-.header-nav a:hover,
-.about-nav-item:hover,
-.about-nav-item:focus,
-.believe-button:hover,
-.believe-button:focus,
-.poster-list-item:hover,
-.poster-list-item:focus {
-  color: rgb(1, 137, 248);
+.worm:hover,
+.worm:focus {
+  fill: rgb(0, 0, 0);
 }
-.about,
-.see,
-.page-footer {
-  background-color: #1e1823;
+.accent,
+.accent-stab {
+  color: rgb(173, 119, 2);
 }
+
+.accent:hover,
+.accent:focus {
+  color: rgb(0, 0, 0);
+}
+
+.header-nav-item,
+.about-nav-list-item,
+.see-list-item-link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(83, 83, 83);
+  color: rgb(6, 180, 143);
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  border: 1px solid rgb(6, 180, 143);
+  border-radius: 15px;
+  transition-property: color, border, background-color;
+  transition-duration: 250ms, 400ms, 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.header-nav-item:focus,
+.header-nav-item:hover,
+.about-nav-list-item:hover,
+.about-nav-list-item:focus,
+.see-list-item-link:hover,
+.see-list-item-link:focus,
+.logo:hover,
+.logo:focus {
+  color: rgb(173, 119, 2);
+  background-color: rgb(6, 180, 143);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/*================about================*/
+.about {
+  background-color: #1d1c2a;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  background-image: url(/images/фон\ варіант\ 3.jpg),
+    linear-gradient(to bottom, #1d1c2a, #433e5c);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
 .about-title {
-  font-size: 35px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 1.22;
-  letter-spacing: -0.03em;
-  color: #fff;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
+  text-align: center;
+  text-shadow: 4px 4px 5px rgb(0, 0, 0);
+  margin-bottom: 15px;
+  max-width: 800px;
 }
 
 .about-text {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.22;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-.about-nav-item {
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
-}
-.see-title {
-  font-weight: 600;
-  font-size: 19px;
-  color: #fff;
-}
-.see-list-item-link {
-  font-weight: 500;
   font-size: 17px;
-  color: #fff;
-}
-.see-list-item-text,
-.footer-text {
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  flex-wrap: wrap;
+  max-width: 800px;
 }
 
+.about-list-item {
+  display: inline-block;
+}
+
+.about-nav {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+/*================Where to see================*/
+
+.see,
+.seasons,
+.poster,
+.characters {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.see-title,
 .seasons-title,
-.believe-title,
 .poster-title,
-.actors-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
+.characters-title {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
   text-align: center;
+  text-shadow: 6px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 30px;
 }
-.seasons-list-item,
-.believe-button {
-  font-size: 14px;
-  line-height: 1.29;
+
+.see-list {
+  display: flex;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+
+.see-list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.see-list-item-img {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.see-list-item-text,
+.seasons-p,
+.dana-text {
+  font-size: 17px;
+  line-height: 1.3;
   letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
+
+/*================All seasons================*/
+
+.all-seasons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.seasons-list-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 250px;
+  align-items: center;
+}
+
+.seasons-title-link {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
+  text-align: center;
+  text-shadow: 3px 1px 3px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.seasons-img {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 250px;
+  max-height: 350px;
+}
+
+/*================posters================*/
+.poster {
+  background-color: #1d1c2a;
+}
+
+.poster-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .poster-list-item {
-  font-size: 14px;
-  line-height: 1.23;
-  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  align-items: center;
 }
+.poster-list-item-img {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.poster-list-item-download,
 .dana-title,
 .david-title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
   text-align: center;
+  text-shadow: 3px 1px 3px rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
-.dana-text,
-.david-text {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: rgba(17, 17, 17, 0.7);
+
+/*================actors================*/
+
+.about-dana {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
+.dana-img {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+}
+.dana-text {
+  max-width: 1000px;
+}
+.dana-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*================fotter================*/
 .address-title {
   font-weight: 500;
   font-size: 14px;
@@ -165,4 +371,77 @@ body {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+}
+.page-footer {
+  background-color: rgba(7, 141, 151, 0.479);
+}
+.footer-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.icon {
+  background-color: rgb(6, 180, 143);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.icon:hover {
+  background-color: rgb(0, 0, 0);
+}
+.icon:hover {
+  fill: rgb(6, 180, 143);
+}
+
+.form {
+  width: 500px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid rgb(6, 180, 143);
+  background-color: #2e2e2e;
+}
+.form:focus-within {
+  border-color: rgb(173, 119, 2);
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  color: rgb(6, 180, 143);
+  transition: color 250ms ease-in-out;
+}
+.form-label:focus-within {
+  color: rgb(173, 119, 2);
+}
+.username,
+.review,
+.radio-recommend,
+.p-form {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(83, 83, 83);
+  color: rgb(6, 180, 143);
+  background-color: rgb(146, 146, 146);
+  padding: 8px;
+  border: 1px solid rgb(173, 119, 2);
+  border-radius: 15px;
+  max-width: 500px;
+  resize: none;
+}
+.username:placeholder-shown,
+.review:placeholder-shown {
+  border-color: rgb(6, 180, 143);
+}
+.button-form {
+  display: inline-flex;
+  padding: 8px;
+  border: 1px solid rgb(173, 119, 2);
+  border-radius: 15px;
+  background-color: rgb(3, 92, 73);
+  color: rgb(173, 119, 2);
 }

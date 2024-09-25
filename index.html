@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html >
+<html lang="eng">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -26,54 +26,50 @@
     <link rel="stylesheet" href="./css/sryles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
+      <div class="container">
       <nav class="header-nav">
-        <ul class="header-list">
-          <li class="list-item">
-            <a class="page-logo" href="./index.html">
-              <img src="./images/logo.jpg" alt="логотип сайту" width="50" />
-              Serial <span class="accent-logo">worm</span>
+        <ul class="header-nav-list">
+          <li class="header-list-item">
+            <a class="logo" href="./index.html">Serial<span class="accent">&nbsp; worm</span>
+            <svg class="worm" width="30" height="30">
+              <use href="/images/symbol-defs.svg#worm"></use>
+            </svg>
             </a>
-          </li>
-          <li class="list-item">
-            <a class="serial-logo" href="./index.html">
-              <img src="./images/logo2.jpeg" alt="логотип серіалу" width="50" />
-              The X files
-            </a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item" >
+        <a class="logo" href="#the-x-files">The <span class="accent">&nbsp;X files</span></a>
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#sites">Where to see</a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#seasons">All seasons</a>
-          </li>
-          <li class="list-item">
-            <a class="header-nav-item" href="#believe"
-              >Do you believe in UFO?</a
-            >
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#poster">Download poster</a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#actors">In the main roles</a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#Dana">Dana Katherine Scully</a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#David">David William Duchovny</a>
-          </li>
-          <li class="list-item">
+        </li>
+        <li class="header-list-item">
             <a class="header-nav-item" href="#contacts">Contacts</a>
-          </li>
+        </li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <main>
       <section class="about">
-        <h1 class="about-title">The X files</h1>
+        <div class="container">
+        <h1 class="about-title" id="the-x-files">The <span class="accent-stab">X files</span></h1>
         <p class="about-text">
           «Цілком таємно» або «Секретні матеріали» — американський фантастичний
           телесеріал. Уперше був показаний телеканалом Fox 10 вересня 1993 року
@@ -82,33 +78,37 @@
           успіхом був показаний в різних країнах світу, поміж них і в Україні.
           На основі серіалу 1998 року був знятий повнометражний фільм «Цілком
           таємно: Боротьба за майбутнє». 24 липня 2008 року відбулася прем'єра
-          фільму «Цілком таємно: Я хочу вірити».
+          фільму «Цілком таємно: Я хочу вірити». 
+          Перший сезон «Цілком таємно» був створений під впливом серіалу «Колчак: Нічний мисливець» сценаристом Крісом Картером. У березні 1993 року розпочався знімальний процес. Зйомки пілотного епізоду тривали 14 днів, його бюджет склав 2 мільйони доларів. Перший сезон знімали у Ванкувері та на його околицях. Цей майданчик використовувався ще п'ять років, і лише з початку шостого сезону знімальна група переїхала в Лос-Анджелес, за проханням виконавця головної ролі Фокса Малдера — Девіда Духовни. 
         </p>
-        <ul class="about-list">
-          <li class="about-list-item">
-            <a class="about-nav-item" href="#poster">Download poster</a>
+        <ul class="about-nav">
+          <li class="about-nav-list">
+            <a class="about-nav-list-item" href="#Dana">Dana Katherine Scully</a>
           </li>
-          <li class="about-list-item">
-            <a class="about-nav-item" href="#actors">In the main roles</a>
+          <li>  
+            <a class="about-nav-list-item" href="#David">David William Duchovny</a>
           </li>
-        </ul>
+        </ul>  
+        </div>
       </section>
 
       <section class="see">
-        <h2 class="see-title" id="sites">Where to see</h2>
+        <div class="container">
+        <h2 class="see-title" id="sites">Where <span class="accent-stab">to see</span></h2>
         <ul class="see-list">
           <li class="see-list-item">
-            <a
-              class="see-list-item-link"
+            <a class="see-list-item-img"
+              href="https://inoriginal.net/series/1604-x-files-1993.html"
+              target="_blank">
+              <img 
+                src="./images/фон варіант 2.jpg"
+                alt="заставка серіалу" 
+              />
+            </a>
+            <a class="see-list-item-link"
               href="https://inoriginal.net/series/1604-x-files-1993.html"
               target="_blank"
-            >
-              <img
-                src="https://22dakika.org/wp-content/uploads/2014/12/x-files.jpeg"
-                alt="заставка серіалу"
-                width="150"
-              />
-              Series in English
+            >Series in English
             </a>
             <p class="see-list-item-text">
               Перегляд фільмів та серіалів англійською мовою - один із найкращих
@@ -117,35 +117,36 @@
             </p>
           </li>
           <li class="see-list-item">
-            <a
-              class="see-list-item-link"
-              href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html"
-              target="_blank"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/uk/c/c9/XFilesMoviePosterUK.jpg"
+            <a class="see-list-item-img"
+              href="https://uaserials.com/85-cilkom-tayemno-sezon-1.html"
+              target="_blank">
+              <img 
+                src="./images/фон варіант 1.jpg"
                 alt="заставка серіалу"
-                width="150"
               />
-              Series in Ukrainian
             </a>
+            <a class="see-list-item-link"
+              href="https://uaserials.com/85-cilkom-tayemno-sezon-1.html"
+              target="_blank"
+            >Series in Ukrainian
+          </a>
             <p class="see-list-item-text">
               Зручний і унікальний у своєму роді кінотеатр для перегляду кіно
               онлайн українською в комфортних для тебе умовах.
             </p>
           </li>
           <li class="see-list-item">
-            <a
-              class="see-list-item-link"
-              href="https://uaserials.pro/85-cilkom-tayemno-sezon-1.html"
-              target="_blank"
-            >
-              <img
-                src="https://uaserial.tv/images/seasons/64/64394e583868e900218922.webp"
-                alt="заставка серіалу"
-                width="150"
+            <a class="see-list-item-img"
+              href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html"
+              target="_blank">           
+              <img src="./images/фон варіант 4.jpg"
+                alt="заставка серіалу" 
               />
-              Series in Ukrainian
+            </a>
+            <a class="see-list-item-link"
+              href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html"
+              target="_blank"
+            >Series in Ukrainian
             </a>
             <p class="see-list-item-text">
               Тобі більше ніколи не доведеться шукати якусь вільну хвилинку, щоб
@@ -156,276 +157,291 @@
             </p>
           </li>
         </ul>
+
+        </div>
       </section>
 
       <section class="seasons">
-        <h2 class="seasons-title" id="seasons">All seasons</h2>
-        <ol class="seasons-list">
+        <div class="container">
+        <h2 class="seasons-title" id="seasons">All <span class="accent-stab">seasons</span></h2>
+         <ul class="all-seasons">
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/0/08/The_X-Files_Season_1_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html">1 season
+            </a>
+            <a 
+              href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html">
+            <img  class="seasons-img"
+              src="./images/1season.jpg"
               alt="Обкладинка першого сезону"
-              width="150"
             />
-            <p>
-              Перший сезон «Цілком таємно» був створений під впливом серіалу
-              «Колчак: Нічний мисливець» сценаристом Крісом Картером. У березні
-              1993 року розпочався знімальний процес. Зйомки пілотного епізоду
-              тривали 14 днів, його бюджет склав 2 мільйони доларів. Перший
-              сезон знімали у Ванкувері та на його околицях. Цей майданчик
-              використовувався ще п'ять років, і лише з початку шостого сезону
-              знімальна група переїхала в Лос-Анджелес, за проханням виконавця
-              головної ролі Фокса Малдера — Девіда Духовни. Прем'єра пілотного
+            </a>
+            <p class="seasons-p">
+              Прем'єра пілотного
               епізоду відбулася 10 вересня 1993 року, він зібрав біля екранів
-              телевізорів 12 мільйонів глядачів. Під час показу рейтинги серіалу
-              невпинно росли, і в підсумку фінальна серія показала рейтинг в 14
-              мільйонів глядачів.
+              телевізорів 12 мільйонів глядачів.
             </p>
           </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/d/df/The_X-Files_Season_2_Blu-ray.jpg/260px-The_X-Files_Season_2_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6649-sekretn-materali-clkom-tayemno.html">2 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6649-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/2 season.jpg"
               alt="Обкладинка другого сезону"
-              width="150"
             />
-            <p>
+            </a>
+            <p class="seasons-p">
               Другий сезон 21 січня 1995 року серіал отримав свій перший
               «Золотий глобус» в номінації за найкращий драматичний серіал.
             </p>
           </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/9/97/The_X-Files_Season_3_Blu-ray.jpg/260px-The_X-Files_Season_3_Blu-ray.jpg"
-              alt="Обкладинка третього сезону"
-              width="150"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6650-sekretn-materali-clkom-tayemno.html">3 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6650-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/3season.jpg"
+              alt="Обкладинка 3 сезону"
             />
-            <p>
-              Третій сезон перевершив рейтинги попередніх двох. Прем'єрний
-              епізод «Благословенний шлях» дебютував з рейтингом в 19.94
-              мільйони глядачів, що удвічі більше прем'єри попереднього сезону.
-              В середньому рейтинги перевищували 15 мільйонів глядачів, що
-              робить його одним з найпопулярніших серіалів сезону 1995—1996
-              років на телебаченні США. Сезон отримав позитивні відгуки від
-              телевізійних критиків, вигравши п'ять «Еммі». Декілька епізодів
-              було написано сценаристом Даріном Морганом, до них належать —
-              «Останній відпочинок Клайда Бракмана» та «„Із відкритого космосу
-              "Джо Чанґа"
+            </a>
+            <p class="seasons-p">
+              Прем'єрний
+              епізод «Благословенний шлях» дебютував з рейтингом в 19.94 мільйони глядачів, що
+              робить його одним з найпопулярніших серіалів сезону 1995 — 1996 США. 
             </p>
           </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/d/d3/The_X-Files_Season_4_Blu-ray.jpg/260px-The_X-Files_Season_4_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6651-sekretn-materali-clkom-tayemno.html">4 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6651-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/4season.jpg"
               alt="Обкладинка 4 сезону"
-              width="150"
             />
-            <p>
-              Четвертий сезон. 19 січня 1997 року серіал отримав свій другий
-              «Золотий глобус» в номінації за найкращий драматичний серіал.
-              Також в своїх номінаціях володарями «Золотого глобусу» стали
-              Джілліан Андерсон за найкращу жіночу роль та Девід Духовни за
-              найкращу чоловічу роль в драматичному серіалі відповідно. 14
-              вересня 1997 року Джілліан Андерсон отримала премію «Еммі» в
-              номінації за найкращу жіночу роль у драматичному серіалі.
+            </a>
+            <p class="seasons-p">
+              19 січня 1997 року серіал отримав свій другий
+              «Золотий глобус», також в своїх номінаціях володарями «Золотого глобусу» стали Джілліан Андерсон та Девід Духовни.
             </p>
           </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/4/46/The_X-Files_Season_5_Blu-ray.jpg/260px-The_X-Files_Season_5_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6652-sekretn-materali-clkom-tayemno.html">5 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6652-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/5season.jpg"
               alt="Обкладинка 5 сезону"
-              width="150"
             />
-            <p>
+            </a>
+            <p class="seasons-p">
               П'ятий сезон. 18 січня 1998 року серіал отримав свій третій
-              «Золотий глобус» в номінації за найкращий драматичний серіал.
+              «Золотий глобус».
             </p>
           </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/4/45/The_X-Files_Season_6_Blu-ray.jpg/260px-The_X-Files_Season_6_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6653-sekretn-materali-clkom-tayemno.html">6 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6653-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/6season.jpg"
               alt="Обкладинка 6 сезону"
-              width="150"
             />
-            <p>
+            </a>
+            <p class="seasons-p">
               Шостий сезон американського фантастичного телесеріалу «Цілком
               таємно» стартував 8 листопада 1998 року на телеканалі Fox.
             </p>
           </li>
-          <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/f/f1/The_X-Files_Season_7_Blu-ray.jpg/260px-The_X-Files_Season_7_Blu-ray.jpg"
-              alt="Обкладинка 7 сезону"
-              width="150"
-            />
-            <p>Сьомий сезон стартував 7 листопада 1999 року.</p>
-          </li>
-          <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/6/61/The_X-Files_Season_8_Blu-ray.jpg/260px-The_X-Files_Season_8_Blu-ray.jpg"
-              alt="Обкладинка 8 сезону"
-              width="150"
-            />
-            <p>Восьмий сезон стартував 5 листопада 2000 року</p>
 
-            <p></p>
-          </li>
+
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/c/cb/The_X-Files_Season_9_Blu-ray.jpg/260px-The_X-Files_Season_9_Blu-ray.jpg"
-              alt="Обкладинка 9 сезону"
-              width="150"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6654-sekretn-materali-clkom-tayemno.html">7 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6654-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/7season.jpg"
+              alt="Обкладинка 7 сезону"
             />
-            <p>
+            </a>
+            <p class="seasons-p">Сьомий сезон стартував 7 листопада 1999 року.</p>
+          </li>
+
+
+          <li class="seasons-list-item">
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6655-sekretn-materali-clkom-tayemno.html">8 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6655-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/8season.jpg"
+              alt="Обкладинка 8 сезону"
+            />
+            </a>
+          <p class="seasons-p">Восьмий сезон стартував 5 листопада 2000 року.</p>
+          </li>
+
+          <li class="seasons-list-item">
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6656-sekretn-materali-clkom-tayemno.html">9 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6656-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/9season.jpg"
+              alt="Обкладинка 9 сезону"
+            />
+            </a>
+            <p class="seasons-p">
               Дев'ятий сезон «Цілком таємно» стартував 11 листопада 2001 року.
             </p>
           </li>
+          
           <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/3/36/The_X-Files_Season_10_Blu-ray.jpg/260px-The_X-Files_Season_10_Blu-ray.jpg"
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6657-sekretn-materali-clkom-tayemno.html">10 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6657-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/10season.jpg"
               alt="Обкладинка 10 сезону"
-              width="150"
             />
-            <p>Десятий сезон стартував 24 січня 2016 року.</p>
+            </a>
+            <p class="seasons-p">Десятий сезон стартував 24 січня 2016 року.</p>
           </li>
-          <li class="seasons-list-item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/uk/thumb/6/68/The_X-Files_Season_11_Blu-ray.jpg/260px-The_X-Files_Season_11_Blu-ray.jpg"
-              alt="Обкладинка 11 сезону"
-              width="150"
-            />
-            <p>Одинадцятий сезон стартував 3 січня 2018 року.</p>
-          </li>
-        </ol>
-      </section>
 
-      <section class="believe">
-        <h2 class="believe-title" id="believe">
-          Do you believe in <span class="believe-accent">UFO?</span>
-        </h2>
-        <button type="button" class="believe-button">I want to believe</button>
-        <button type="button" class="believe-button">I don't believe</button>
+          <li class="seasons-list-item">
+            <a class="seasons-title-link" 
+              href="https://uakino.me/seriesss/detective_series/6658-sekretn-materali-clkom-tayemno.html">11 season
+            </a>            
+            <a class="seasons-title-link"
+            href="https://uakino.me/seriesss/detective_series/6658-sekretn-materali-clkom-tayemno.html">
+            <img class="seasons-img"
+              src="./images/11season.jpg"
+              alt="Обкладинка 11 сезону"
+            />
+            </a>
+            <p class="seasons-p">Одинадцятий сезон стартував 3 січня 2018 року.</p>
+          </li>
+
+        </ul>
+        </div>
       </section>
 
       <section class="poster">
+        <div class="container">
         <h2 class="poster-title" id="poster">
-          <span class="poster-accent">Download</span> posters
+          <span class="accent-stab">Download</span> posters
         </h2>
+
         <ul class="poster-list">
+
           <li class="poster-list-item">
-            <a
-              href="./images/1e80b7770a3b58359b8e26583d61d53c.jpg"
-              download="Х файли через роки"
-            >
-              <img
-                src="./images/1e80b7770a3b58359b8e26583d61d53c.jpg"
-                alt="Герої серіалу"
-                width="300"
-              />Download
-            </a>
-          </li>
-          <li class="poster-list-item">
-            <a href="./images/675798.jpg" download="Постер останнього сезону">
-              <img
-                src="./images/675798.jpg"
-                alt="Постер з героями"
-                width="300"
-              />Download
-            </a>
-          </li>
-          <li class="poster-list-item">
-            <a
+            <a class="poster-list-item-download" 
               href="./images/HD-wallpaper-the-x-files-dana-scully-david-duchovny-fox-mulder-gillian-anderson.jpg"
               download="Малдер та Скаллі"
             >
-              <img
+              <img class="poster-list-item-img" 
                 src="./images/HD-wallpaper-the-x-files-dana-scully-david-duchovny-fox-mulder-gillian-anderson.jpg"
                 alt="Малдер та Скаллі"
-                width="300"
               />Download
             </a>
           </li>
           <li class="poster-list-item">
-            <a
+            <a class="poster-list-item-download" href="./images/675798.jpg" download="Постер останнього сезону">
+              <img class="poster-list-item-img" 
+                src="./images/675798.jpg"
+                alt="Постер з героями"
+               />Download
+            </a>
+          </li>
+          <li class="poster-list-item">
+            <a class="poster-list-item-download" 
               href="./images/HD-wallpaper-ufo-the-x-files-want-to-believe-text-text-to-x-files-ufo-the-want-believe.jpg"
               download="I want to believe"
             >
-              <img
+              <img class="poster-list-item-img" 
                 src="./images/HD-wallpaper-ufo-the-x-files-want-to-believe-text-text-to-x-files-ufo-the-want-believe.jpg"
                 alt="I want to believe"
-                width="300"
               />Download
             </a>
           </li>
           <li class="poster-list-item">
-            <a
+            <a class="poster-list-item-download" 
               href="./images/the-x-files-logo-black-tv-wallpaper-preview.jpg"
               download="The X files"
             >
-              <img
+              <img class="poster-list-item-img" 
                 src="./images/the-x-files-logo-black-tv-wallpaper-preview.jpg"
                 alt="The X files"
-                width="300"
               />Download
             </a>
           </li>
           <li class="poster-list-item">
-            <a href="./images/zRnB8am.jpg" download="Постер">
-              <img src="./images/zRnB8am.jpg" alt="Постер" width="300" />
+            <a class="poster-list-item-download"  
+            href="./images/zRnB8am.jpg" download="Постер">
+              <img  class="poster-list-item-img"  src="./images/zRnB8am.jpg" alt="Постер"/>
               Download
             </a>
           </li>
         </ul>
+        </div>
       </section>
 
-      <section class="actors">
-        <h2 class="actors-title" id="actors">
-          In the main <span class="actors-accent">roles</span>
+      <section class="characters">
+        <div class="container">
+        <h2 class="characters-title" id="actors">
+          The main<span class="accent">characters</span>
         </h2>
-        <h3 class="dana-title" id="Dana">Dana Katherine Scully</h3>
-        <ul class="dana-list">
-          <li class="dana-list-item">
-            <img
-              src="https://krasavica.info/uploads/posts/2022-12/1672402483_krasavica-info-p-dana-skalli-pinterest-14.jpg"
-              alt="Джиліан Андерсен"
-              width="210"
-            />
+        <h3 class="dana-title" id="Dana">Dana Katherine <span class="accent"> Scully</h3>
+          <div class="about-dana">
+            <img class="dana-img"
+               src="/images/gillian-anderson_26.jpg"
+               alt="Джиліан Андерсен"          />
+            <p class="dana-text">
+            Дейна Скаллі — роль виконала Джилліан Андерсон. Скаллі — спеціальна агентка ФБР, лікарка і вчена, яка є партнеркою Фокса Малдера. На відміну від нього Скаллі є скептиком і потребує наукових пояснень, щодо розслідуваних ними справ. Проте, незважаючи на її жорсткий скептицизм, вона католичка, і її віра відіграє важливу роль в декількох епізодах. З часом вона стає більш відкритою до можливості існування паранормальних явищ. У другій половині 8 сезону Скаллі залишила спеціальний відділ з грифом «X» і переїхала в Квантіко, для навчання нових агентів ФБР. На її місце була взята спеціальна агентка Моніка Реєс. Має спільного з Фоксом Малдером сина Вільяма, якого віддала на виховання до прийомних батьків. Вона з'являлася в обох фільмах за мотивами серіалу. В 10 сезоні Скаллі знову повертається працювати в ФБР.
+
+            Дейна Скаллі народилася 23 лютого 1964 року в католицькій сім'ї ірландського походження Маргарет і Вільяма Скаллі. У неї був старший брат Вільям, старша сестра Меліса, і молодший брат Чарльз. Дитинство провела в Аннаполісі і Сан-Дієго. Її улюбленою книжкою був «Мобі Дік». Батько Дейни служив офіцером військово-морського флоту, помер у 1 сезоні від обширного серцевого нападу, називав її Старбак (англ. Starbuck) — ім'ям першого помічника капітана з «Мобі Діка».
+
+Освіту Скаллі здобула в університеті штату Меріленд, який закінчила зі ступенем бакалавра з фізики. Дипломна робота Скаллі називалася "Парадокс близнюків" Ейнштейна: Нова інтерпретація». Після закінчення медичної школи вступила до ФБР, причому робота в бюро їй подобалася, оскільки Скаллі відчувала, що може відзначитися на цьому терені. Рідні не схвалювали її вибору. Працювала судовою патологоанатомкою. Пізніше отримала в напарники Фокса Малдера.
+
+Наприкінці серіалу платонічні стосунки з напарником Малдером стали романтичними. У шостому сезоні в епізоді «Як привиди поцупили Різдво» привид, який знає внутрішню роботу розуму Скаллі, припустив, що джерелом її близькості з Малдером є її бажання завжди довести його неправоту. У фільмі «Секретні матеріали: Хочу вірити», через шість років, живе з Малдером у штаті Вірджинія.
+
+Скаллі католичка; у серії 4х13 «Більше ніколи» вона робить собі татуювання Уробороса на спині. У серії 3x04 «Останній відпочинок Клайда Бракмана» Скаллі бере собі собаку після смерті сусідки Бракмана (померанський шпіц Квікег, англ. Queequeg, на честь ще одного персонажа «Мобі Діка»). Собака гине в епізоді 3x22 «Болото» у пащі крокодила.
+
+
+Персонажка Скаллі викликала значне збільшення кількості жінок у науці, праві та медицині. Це явище названк «ефектом Скаллі», оскільки роль лікарки та спеціальної агентки ФБР надихнула багатьох молодих жінок на карєру в науці, медицині, інженерії та правоохоронних органах, що призвело до помітного збільшення кількості жінок у цих сферах.
+
+Енн Саймон, професор біології та наукова консультантка серіалу згадує: «Я запитала перший курс «Біологія»: скільки з них пішли в науку під впливом від персонажки Скаллі з «Секретних матеріалів», і половина людей в аудиторії піднялася. Це дуже багато! Це означало, що шоу справляло ефект". "Ефект Скаллі" залишається предметом академічного дослідження.
+            </p>
+            <ul class="dana-list">
+              <li class="dana-list-link">
+                <a href="https://www.instagram.com/gilliana/" target="_blank">
+                  <svg width="40" height="40">
+                    <use href="/images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
           </li>
-          <li class="dana-list-item">
-            <img
-              src="./images/gillian-anderson_26.jpg"
-              width="150"
-              alt="gillian-anderson"
-            />
-          </li>
-          <li class="dana-list-item">
-            <img
-              src="./images/upload-GettyImages-153202402-pic_32ratio_600x400-600x400-15252.jpg"
-              width="200"
-              alt="gillian-anderson"
-            />
-          </li>
-          <li class="dana-list-item">
-            <img src="./images/ga.jpg" width="200" alt="gillian-anderson" />
-          </li>
-          <li class="dana-list-item">
-            <img
-              src=".//images/jn9nH2TWkjNwlsdYxhBzamiuuZp.jpg"
-              width="135"
-              alt="gillian-anderson"
-            />
-          </li>
-        </ul>
-        <ul class="dana-list-link">
-          <li class="dana-list-link-item">
-            <a href="https://www.instagram.com/gilliana/" target="_blank">
-              <img
-                src="https://e7.pngegg.com/pngimages/625/732/png-clipart-computer-icons-sticker-instagram-text-trademark-thumbnail.png"
-                alt="gilliana"
-                width="100"
-                height="100"
-              />
-            </a>
-          </li>
-          <li class="dana-list-link-item">
+          <li class="dana-list-link">
             <a href="https://ua.kinorium.com/name/96/" target="_blank">
               <img
                 src="./images/Screenshot_1.jpg"
@@ -435,7 +451,7 @@
               />
             </a>
           </li>
-          <li class="dana-list-link-item">
+          <li class="dana-list-link">
             <a
               href="https://suspilne.media/culture/773351-ak-zinki-uavlaut-seks-koli-mozut-buti-anonimnimi-u-vidavnictvi-se-odnu-storinku-vijde-knizka-dzillian-anderson/"
               target="_blank"
@@ -448,28 +464,25 @@
               />
             </a>
           </li>
-          <li class="dana-list-link-item">
+          <li class="dana-list-link">
             <a
               href="https://tsn.ua/glamur/zirka-sekretnih-materialiv-anderson-pro-svoyu-poyizdku-do-ukrayini-bombi-padayut-na-ditey-ya-bachila-na-vlasni-ochi-2424208.html"
               target="_blank"
             >
-              <img
-                src="./images/Screenshot_3.jpg"
-                alt="gilliana"
-                width="100"
-                height="100"
-              />
+<svg><use href="/images/symbol-defs.svg#icon-Screenshot_3"></use> </svg>
             </a>
           </li>
-        </ul>
-        <p class="dana-text">
-          Дейна Кетрін Скаллі (англ. Dana Katherine Scully) — персонажка
-          фантастичної франшизи навколо телесеріалу «Цілком таємно», втілена
-          Джилліан Андерсон. Спеціальна агентка ФБР, феміністська ікона. В
-          перекладі телеканалу 1+1 ім'я звучить як Дейна, втім у пізнішому
-          перекладі телеканалу СТБ використовувався варіант Дана.
-        </p>
-        <h3 class="david-title" id="David">David William Duchovny</h3>
+            </ul>
+          </div>
+
+
+
+
+
+          //
+          //
+          ///
+        <h3 class="david-title" id="David">Fox William<span class="accent"></span>Mulder</h3>
         <ul class="david-list">
           <li class="david-list-item">
             <img
@@ -569,10 +582,14 @@
           «Самотні стрільці» і в обох фільмах за мотивами серіалу. В 10 сезоні
           Малдер знову повертається працювати в ФБР.
         </p>
-      </section>
+      </div>
+      
+    </section>
+
     </main>
 
     <footer class="page-footer">
+      <div class="container">
       <p class="footer-text">
         The best information about series and stars on our website.             
           <a class="page-logo" href="./index.html">
@@ -595,7 +612,7 @@
           <li class="list-item">
             <a class="page-logo" href="./index.html">
               <img src="./images/logo.jpg" alt="логотип сайту" width="50" />
-              Serial <span class="accent-logo">worm</span>
+              Serial<span class="accent-logo"> worm</span>
             </a>
           </li>
           <li class="list-item">
@@ -695,7 +712,126 @@
             </a>
           </li>
         </ul>
+        <ul>
+          <li>
+            <svg> <use href="./images/symbol-defs.svg#icon-phone"></use></svg>
+          </li>
+          <li>
+            <svg> <use href="./images/symbol-defs.svg#icon-envelop"></use></svg>
+          </li>
+        </ul>
+
       </nav>
+          <svg class="icon" width="120" height="120" viewBox="0 0 32 32"></svg>
+      <path d="M20.267 16a4.267 4.267 0 11-8.534 0 4.267 4.267 0 018.534 0z" />
+      <path d="M12 2.667L9.56 5.334H5.333a2.675 2.675 0 00-2.667 2.667v16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667h-4.227l-2.44-2.667h-8zm4 20c-3.68 0-6.667-2.987-6.667-6.667S12.32 9.333 16 9.333 22.667 12.32 22.667 16 19.68 22.667 16 22.667z" />
+    </svg>
+      </div>
     </footer>
+
+
+
+
+    <form class="form" name="coment" autocomplete="off" novalidate>
+      <div>
+      <label class="form-label">Your name
+        <input class="username" type="text" name="username" placeholder="Your name..." autofocus/>
+      </label>
+        <label class="form-label">Your short review
+        <textarea class="review" name="review" rows="3" placeholder="Your short review about the series..."></textarea>
+      </label>
+<lable class="form-label">Where are you from?
+  <select name="Where are you from?">
+    <optgroup label="Continent">Continent
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="Europe">Europe</option>
+      <option value="Australia and Oceania">Australia and Oceania</option>
+      <option value="Antarctica">Antarctica</option>
+      <option value="America">America</option>
+    </optgroup>
+  </select>
+
+
+
+
+</lable>
+
+      </div>
+      </div>
+
+      <div>
+      <p class="p-form">Would you recommend this series</p>
+      <label class="form-label">Yes
+        <input class="radio-recommend" name="recommend" type="radio" value="Yes" />
+     </label>
+      <label class="form-label">No
+        <input class="radio-recommend" name="recommend" type="radio" value="No" />
+     </label>
+      <label class="form-label">I haven't watched it yet
+        <input class="radio-recommend" name="recommend" type="radio" value="I haven't watched it yet" checked />
+     </label>
+      </div>
+
+      <div>
+      <p class="p-form">What awards would you give this series</p>
+
+
+      <label class="form-label">Academy Awards
+        <input type="checkbox" name="awards" value="Academy Awards" />
+      </label>
+
+      <label class="form-label">Golden Globe Awards
+        <input type="checkbox" name="awards" value="Golden Globe Awards" />
+      </label>
+
+      <label class="form-label">BAFTA (British Academy Film Awards)
+        <input type="checkbox" name="awards" value="BAFTA" />
+      </label>
+
+      <label class="form-label">Cannes Film Festival
+        <input type="checkbox" name="awards" value="Cannes Film Festival" />
+      </label>
+
+      <label class="form-label">Tony Awards
+        <input type="checkbox" name="awards" value="Tony Awards" />
+      </label>
+
+      <label class="form-label">César Awards
+        <input type="checkbox" name="awards" value="César Awards" />
+      </label>
+
+      <label class="form-label">Golden Raspberry
+        <input type="checkbox" name="awards" value="Golden Raspberry" />
+      </label>
+
+
+      <label class="form-label">Saturn Awards
+        <input type="checkbox" name="awards" value="Saturn Awards" />
+      </label>
+
+
+      <label class="form-label">Grammy Awards
+        <input type="checkbox" name="awards" value="Grammy Awards" />
+      </label>
+
+      <label class="form-label">Emmyв Award
+        <input type="checkbox" name="awards" value="Emmyв Award" />
+      </label>
+
+      <button class="button-form" type="submit">Submit feedback</button>
+      </div>
+    </form>
+
+
+          <section class="believe">
+        <div class="container">
+        <h2 class="believe-title" id="believe">
+          Do you believe in <span class="accent">UFO?</span>
+        </h2>
+        <button type="button" class="believe-button">I want to believe</button>
+        <button type="button" class="believe-button">I don't believe</button>
+      </section>
+
   </body>
 </html>
