@@ -23,6 +23,14 @@ button {
 .input {
   font-family: inherit;
 }
+
+/*скинути налаштування для філсетів (це як діви у модальному вікні) */
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 /* Скидання відступів у заголовків та параграфів*/
 h1,
 h2,
@@ -133,9 +141,7 @@ body {
   padding: 8px;
   border: 1px solid rgb(6, 180, 143);
   border-radius: 15px;
-  transition-property: color, border, background-color;
-  transition-duration: 250ms, 400ms, 250ms;
-  transition-timing-function: ease-in-out;
+  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
 }
 
 .header-nav-item:focus,
@@ -348,100 +354,184 @@ body {
   justify-content: center;
   align-items: center;
 }
+.dana-list-item {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border: 1px solid rgb(6, 180, 143);
+  background-color: #111111;
+  transition-property: color, border, background-color;
+  transition-duration: 250ms, 400ms, 250ms;
+  transition-timing-function: ease-i;
+}
+.dana-list-link {
+  color: rgb(255, 8, 0);
+}
+.dana-list-link-svg {
+  fill: rgb(212, 0, 255);
+}
 
 /*================fotter================*/
-.address-title {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  color: #fff;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 8, 10, 0.616),
+    rgb(0, 8, 10)
+  );
+
+  transition: opacity 300ms ease-in-out;
+
+  /*дає змогу сховати модальне вікно та змогу калацати все, що під ним 
+  в опасіті поставити 1*/
+  opacity: 0;
+  pointer-events: none;
 }
-.address-list {
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #fff;
+.modal-overlay.is-open {
+  /* opacity: 0;
+  pointer-events: auto; /*клас для джаваскрипта, щоб повиртати видимість модальному вікну*/
 }
-.footer-nav-item,
-.footer-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: -0.02em;
-  color: #fff;
-}
-.page-footer {
-  background-color: rgba(7, 141, 151, 0.479);
-}
-.footer-text {
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-}
-.icon {
-  background-color: rgb(6, 180, 143);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-}
-.icon:hover {
-  background-color: rgb(0, 0, 0);
-}
-.icon:hover {
-  fill: rgb(6, 180, 143);
+
+.modal-window {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(39, 39, 39, 0.849),
+    rgb(3, 97, 77)
+  );
+
+  border-radius: 15px;
+  border: 1px solid rgb(6, 180, 143);
+  padding: 60px;
+
+  max-width: 1000px;
+  height: 90%;
+  max-height: 800px;
+
+  overflow-y: auto;
 }
 
 .form {
-  width: 500px;
-  padding: 15px;
-  border-radius: 30px;
-  border: 1px solid rgb(6, 180, 143);
-  background-color: #2e2e2e;
+  /*щоб спіймати кнопку хрестика*/
+  position: relative;
 }
-.form:focus-within {
-  border-color: rgb(173, 119, 2);
+
+/*=====content-forma===*/
+
+.icon-close-button {
+  fill: rgb(6, 180, 143);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  /*обовязково скидати міжрядковий інтервал*/
+  line-height: 0;
+
+  /*позиціонування кнопки на абсолютах*/
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
+}
+
+.icon-close-button:hover,
+.icon-close-button:focus {
+  fill: rgb(173, 119, 2);
+}
+
+.input-form {
+  background-color: rgba(255, 255, 255, 0.493);
+  border: 1px solid rgb(6, 180, 143);
+  border-radius: 10px;
+
+  padding-left: 10px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  height: 50px;
 }
 
 .form-label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.star {
+  color: rgb(197, 22, 22);
+}
+
+.legend {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin-bottom: 8px;
+}
+
+.fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.review-textarea {
+  background-color: rgba(255, 255, 255, 0.493);
+  border: 1px solid rgb(6, 180, 143);
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+  width: 100%;
+  height: 90px;
+  resize: none;
+}
+
+/*=====button-forma===*/
+.button-forma {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-  color: rgb(6, 180, 143);
-  transition: color 250ms ease-in-out;
+  justify-content: center;
+  column-gap: 20px;
 }
-.form-label:focus-within {
-  color: rgb(173, 119, 2);
-}
-.username,
-.review,
-.radio-recommend,
-.p-form {
-  font-weight: 700;
+
+.button-form {
+  font-weight: 400;
   font-size: 20px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-shadow: 1px 1px 2px rgb(83, 83, 83);
   color: rgb(6, 180, 143);
-  background-color: rgb(146, 146, 146);
-  padding: 8px;
-  border: 1px solid rgb(173, 119, 2);
+  background-color: rgb(0, 0, 0);
+  padding: 15px 30px;
+  border: 1px solid rgb(6, 180, 143);
   border-radius: 15px;
-  max-width: 500px;
-  resize: none;
+  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
 }
-.username:placeholder-shown,
-.review:placeholder-shown {
-  border-color: rgb(6, 180, 143);
-}
-.button-form {
-  display: inline-flex;
-  padding: 8px;
-  border: 1px solid rgb(173, 119, 2);
-  border-radius: 15px;
-  background-color: rgb(3, 92, 73);
+
+.button-form:hover,
+.button-form:focus {
   color: rgb(173, 119, 2);
+  background-color: rgb(6, 180, 143);
+  border: 1px solid rgb(173, 119, 2);
 }
