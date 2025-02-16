@@ -90,7 +90,8 @@ body {
   flex-wrap: wrap;
 }
 
-.logo {
+.logo,
+.logo-footer {
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -101,26 +102,31 @@ body {
   padding: 8px;
   border: 1px solid rgb(6, 180, 143);
   border-radius: 15px;
-  transition-property: color, border, background-color;
-  transition-duration: 250ms, 400ms, 250ms;
-  transition-timing-function: ease-in-out;
+  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
   max-height: 38px;
-}
-
-.logo {
   display: flex;
   align-items: center;
 }
+
+.logo-footer {
+  background-color: transparent;
+  border: none;
+}
+
+
 .worm {
   fill: rgb(173, 119, 2);
+  transition: fill 350ms ease-in-out;
 }
 .worm:hover,
 .worm:focus {
   fill: rgb(0, 0, 0);
 }
 .accent,
-.accent-stab {
+.accent-stab,
+.accent-footer {
   color: rgb(173, 119, 2);
+  transition: color 350ms ease-in-out;
 }
 
 .accent:hover,
@@ -130,7 +136,7 @@ body {
 
 .header-nav-item,
 .about-nav-list-item,
-.see-list-item-link {
+.see-list-text {
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
@@ -141,15 +147,25 @@ body {
   padding: 8px;
   border: 1px solid rgb(6, 180, 143);
   border-radius: 15px;
-  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
+  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
+}
+.see-list-text {
+  display: inline-block;
+  margin-bottom: 20px;
+
+}
+
+
+.see-list-text{
+  background-color: rgba(61, 60, 60, 0.616);
+  padding: 15px;
+  border: 1px solid rgba(7, 223, 176, 0.705);
 }
 
 .header-nav-item:focus,
 .header-nav-item:hover,
 .about-nav-list-item:hover,
 .about-nav-list-item:focus,
-.see-list-item-link:hover,
-.see-list-item-link:focus,
 .logo:hover,
 .logo:focus {
   color: rgb(173, 119, 2);
@@ -206,6 +222,7 @@ body {
 .see,
 .seasons,
 .poster,
+.page-footer,
 .characters {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -234,27 +251,52 @@ body {
 .see-list-item {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .see-list-item-img {
   border-radius: 15px;
-  overflow: hidden;
+  object-fit: cover;
   width: 300px;
+  height: 300px;
+
 }
 
 .see-list-item-text,
 .seasons-p,
-.dana-text {
+.actor-text,
+.address-list
+{
   font-size: 17px;
   line-height: 1.3;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
+
+
+.see-list-item-text {
+  margin-bottom: 20px;
+}
+
+.see-list-link {
+  display: inline-block;
+  font-size: 17px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-shadow: 1px 1px 2px rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
+    background-color: rgba(150, 150, 150, 0.514);
+    padding: 8px;
+    border: 1px solid rgba(6, 180, 142, 0.555);
+    border-radius: 15px;
+
+}
+
+
+
 
 /*================All seasons================*/
 
@@ -292,35 +334,94 @@ body {
 }
 
 /*================posters================*/
+.poster-title {
+  margin-bottom: 50px;
+}
+
 .poster {
   background-color: #1d1c2a;
+  height: 590px;
+  position: relative;
 }
+
+.content {
+  height: 210px;
+  display: flex;
+}
+
+.marquee {
+  position: absolute;
+  left: 0;
+}
+
 
 .poster-list {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  width: max-content; /* Робимо ширину достатньою для плавного руху */
+  animation: marqueeLoop 90s linear infinite;
+  transition: animation-duration 10s ease-in-out;
 }
+
+
+.poster-list2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: max-content; /* Робимо ширину достатньою для плавного руху */
+  animation: marqueeLoop2 90s linear infinite;
+  transition: animation-duration 10s ease-in-out;
+}
+/* Оновлені ключові кадри для зміни напрямку */
+@keyframes marqueeLoop2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 .poster-list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 250px;
-  align-items: center;
-}
-.poster-list-item-img {
-  border-radius: 15px;
-  overflow: hidden;
-  width: 300px;
-  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out;
+  white-space: nowrap;
 }
 
-.poster-list-item-download,
-.dana-title,
-.david-title {
+/* Ефект збільшення при наведенні */
+.poster-list-item:hover {
+  transform: scale(1.6);
+}
+
+/* Оновлені ключові кадри для зміни напрямку */
+@keyframes marqueeLoop {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+.poster-list-item-img {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.actor-title,
+.address-title
+{
   font-weight: 400;
   font-size: 23px;
   line-height: 1.22;
@@ -333,46 +434,107 @@ body {
 
 /*================actors================*/
 
-.about-dana {
+.about-actor {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
+
 }
-.dana-img {
+.actor-img {
   border-radius: 10px;
-  overflow: hidden;
   max-width: 300px;
-}
-.dana-text {
-  max-width: 1000px;
-}
-.dana-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.dana-list-item {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding: 8px;
-  border: 1px solid rgb(6, 180, 143);
-  background-color: #111111;
-  transition-property: color, border, background-color;
-  transition-duration: 250ms, 400ms, 250ms;
-  transition-timing-function: ease-i;
-}
-.dana-list-link {
-  color: rgb(255, 8, 0);
-}
-.dana-list-link-svg {
-  fill: rgb(212, 0, 255);
+  margin-bottom: 10px;
 }
 
+.actor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.actor-list-item {
+display: inline-block;
+font-size: 13px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(83, 83, 83);
+  color: rgb(255, 255, 255);
+  background-color: rgba(150, 150, 150, 0.514);
+  padding: 8px;
+  border: 1px solid rgba(6, 180, 142, 0.555);
+  border-radius: 15px;
+  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
+}
+
+.actor-list-item:hover {
+  background-color: rgba(168, 170, 170, 0.274);
+  border: 1px solid rgb(4, 209, 165);
+  background-color: rgba(204, 203, 203, 0.514);
+}
+
+.actor-text {
+  text-align: start;
+  text-indent: 3%;
+
+}
+
+.actor-text-div {
+  max-height: 340px;
+  overflow: auto;
+}
+
+.actor {
+  margin-bottom: 30px;
+}
 /*================fotter================*/
+
+.page-footer
+{background-color: #1d1c2a;}
+
+.logo-footer {
+justify-content: center;
+}
+
+
+.swing {
+  animation: swing-animation 1s infinite alternate ease-in-out;
+  transform-origin: center;
+  fill: rgb(255, 255, 255);
+  filter: drop-shadow(5px 5px 5px rgb(110, 110, 110));
+  transition: transform 0.3s ease, filter 0.3s ease; /* Додаємо плавний перехід */
+}
+
+@keyframes swing-animation {
+  0% { transform: rotate(-10deg) scale(1); }
+  100% { transform: rotate(10deg) scale(1); }
+}
+
+
+
+.btn-open-form {
+  position: fixed;
+  bottom: 40px; 
+  right: 40px; 
+
+}
+
+.btn-open-form:hover .swing {
+  transform: scale(1.4) rotate(0deg); 
+  filter: drop-shadow(1px 1px 5px rgb(4, 209, 165)); 
+  animation: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -392,14 +554,11 @@ body {
   );
 
   transition: opacity 300ms ease-in-out;
-
-  /*дає змогу сховати модальне вікно та змогу калацати все, що під ним 
-  в опасіті поставити 1*/
   opacity: 0;
   pointer-events: none;
 }
-.modal-overlay.is-open {
-  /* opacity: 0;
+.is-open {
+  opacity: 1;
   pointer-events: auto; /*клас для джаваскрипта, щоб повиртати видимість модальному вікну*/
 }
 
@@ -412,13 +571,10 @@ body {
 
   border-radius: 15px;
   border: 1px solid rgb(6, 180, 143);
-  padding: 60px;
+  padding: 50px;
 
-  max-width: 1000px;
-  height: 90%;
-  max-height: 800px;
-
-  overflow-y: auto;
+  max-width: 600px;
+  max-height: 900px;
 }
 
 .form {
@@ -439,10 +595,10 @@ body {
 
   /*позиціонування кнопки на абсолютах*/
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: -290px;
 
-  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
+  transition: fill 400ms ease-in-out;
 }
 
 .icon-close-button:hover,
@@ -521,17 +677,17 @@ body {
   line-height: 1;
   letter-spacing: -0.01em;
   text-shadow: 1px 1px 2px rgb(83, 83, 83);
-  color: rgb(6, 180, 143);
-  background-color: rgb(0, 0, 0);
+  color: rgb(7, 202, 160);
+  background-color: rgba(0, 0, 0, 0.425);
   padding: 15px 30px;
-  border: 1px solid rgb(6, 180, 143);
+  border: 1px solid rgb(7, 199, 157);
   border-radius: 15px;
-  transition: color, border, background-color, 250ms, 400ms, 250ms, ease-in-out;
+  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
 }
 
 .button-form:hover,
 .button-form:focus {
   color: rgb(173, 119, 2);
-  background-color: rgb(6, 180, 143);
+  background-color: rgb(9, 240, 190);
   border: 1px solid rgb(173, 119, 2);
 }
