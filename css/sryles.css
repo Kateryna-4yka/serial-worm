@@ -1,6 +1,4 @@
-/* Назва шрифтів з сайту гугл font-family: 'Montserrat', sans-serif;*/
-/* Скидання для елементів сторінки */
-/*скидання точок та цифр перед списками*/
+/* ============================================глобальні скидання стилів ========================================*/
 ul,
 ol {
   margin-top: 0;
@@ -8,18 +6,18 @@ ol {
   padding-left: 0;
   list-style-type: none;
 }
-/* скидання стиля для посилання. Задавання йому наслідування кольору*/
+
 a {
   text-decoration: none;
   color: inherit;
 }
-/* зміна курсону при наведенні на кнопки, успадкування тексту та кольору*/
+
 button {
   cursor: pointer;
   font-family: inherit;
   color: currentColor;
 }
-/* успадкування шрифту для input form*/
+
 .input {
   font-family: inherit;
 }
@@ -31,7 +29,6 @@ button {
   border: none;
 }
 
-/* Скидання відступів у заголовків та параграфів*/
 h1,
 h2,
 h3,
@@ -42,25 +39,12 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* картинки стають блоковими та підганяються під контейнер */
+
 img {
   display: block;
   max-width: 100%;
 }
-/* налаштування для БОДІ. Всі спільні значення для всієї сторінки*/
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #111111;
-  background-color: #717077;
-}
-/* надаємо глобальний контейнер з падінгами, як з макету, та авто марджинами зліва-зправа*/
-.container {
-  max-width: 1750px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 /* приховані елементи */
 .visually-hidden {
   position: absolute;
@@ -74,17 +58,93 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*================header================*/
+/* ==============================================локальні стилі ================================================*/
+
+/* надаємо глобальний контейнер з падінгами, як з макету, та авто марджинами зліва-зправа*/
+.container {
+  max-width: 1750px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgb(224, 224, 224);
+  background-color: #717077;
+  font-weight: 400;
+}
+
+.title1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
+  text-align: center;
+  text-shadow: 4px 4px 5px rgb(0, 0, 0);
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.title2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
+  text-align: center;
+  text-shadow: 6px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 30px;
+  
+}
+
+.title3 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
+  color: rgb(6, 180, 143);
+  text-align: center;
+  text-shadow: 3px 1px 3px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+/*====================================================header====================================================*/
+
+.about-text {
+  letter-spacing: 0.005em;
+  max-width: 800px;
+  text-indent: 3%;
+}
+
+.text, .see-list-item-text {
+  text-align: center;
+  text-indent: 3%;
+}
+.see-list-item-text {
+  margin-bottom: 20px;
+}
+
 .header {
   padding-top: 10px;
   position: fixed;
-  z-index: 999;
+  z-index: 99;
 }
 
 .header-nav-list {
   display: flex;
   column-gap: 8px;
-  row-gap: 20px;
+  row-gap: 8px;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
@@ -92,6 +152,8 @@ body {
 
 .logo,
 .logo-footer {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -104,41 +166,23 @@ body {
   border-radius: 15px;
   transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
   max-height: 38px;
-  display: flex;
-  align-items: center;
 }
 
-.logo-footer {
-  background-color: transparent;
-  border: none;
-}
-
-
-.worm {
-  fill: rgb(173, 119, 2);
-  transition: fill 350ms ease-in-out;
-}
-.worm:hover,
-.worm:focus {
-  fill: rgb(0, 0, 0);
-}
-.accent,
-.accent-stab,
-.accent-footer {
+.accent {
   color: rgb(173, 119, 2);
+  fill: rgb(173, 119, 2);
   transition: color 350ms ease-in-out;
 }
 
 .accent:hover,
 .accent:focus {
   color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
 }
 
-.header-nav-item,
-.about-nav-list-item,
-.see-list-text {
+.button-item {
+  display: inline-block;
   font-weight: 400;
-  font-size: 17px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-shadow: 1px 1px 2px rgb(83, 83, 83);
@@ -149,23 +193,9 @@ body {
   border-radius: 15px;
   transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
 }
-.see-list-text {
-  display: inline-block;
-  margin-bottom: 20px;
 
-}
-
-
-.see-list-text{
-  background-color: rgba(61, 60, 60, 0.616);
-  padding: 15px;
-  border: 1px solid rgba(7, 223, 176, 0.705);
-}
-
-.header-nav-item:focus,
-.header-nav-item:hover,
-.about-nav-list-item:hover,
-.about-nav-list-item:focus,
+.button-item:focus,
+.button-item:hover,
 .logo:hover,
 .logo:focus {
   color: rgb(173, 119, 2);
@@ -173,42 +203,41 @@ body {
   border: 1px solid rgb(0, 0, 0);
 }
 
-/*================about================*/
+
+.button-item-wite {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 2px rgb(83, 83, 83);
+  color: rgb(2, 231, 182);
+  background-color: rgba(150, 150, 150, 0.514);
+  padding: 8px;
+  border: 1px solid rgba(2, 231, 181, 0.534);
+  border-radius: 15px;
+  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
+  margin-bottom: 7px;
+  margin-right: 5px;
+  transition: transform 0.3s ease, color 350ms ease-in-out, border-color 350ms ease-in-out, background-color 350ms ease-in-out;
+  }
+
+.button-item-wite:hover {
+  transform: scale(1.05);
+  background-color: rgba(204, 203, 203, 0.664);
+  border: 1px solid rgb(4, 228, 179);
+}
+
+/*============================================about==========================================================*/
 .about {
   background-color: #1d1c2a;
   padding-top: 150px;
   padding-bottom: 20px;
   background-image: url(/images/фон\ варіант\ 3.jpg),
-    linear-gradient(to bottom, #1d1c2a, #433e5c);
+  linear-gradient(to bottom, #1d1c2a, #433e5c);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
-}
-
-.about-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.22;
-  letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
-  text-align: center;
-  text-shadow: 4px 4px 5px rgb(0, 0, 0);
-  margin-bottom: 15px;
-  max-width: 800px;
-}
-
-.about-text {
-  font-size: 17px;
-  line-height: 1.3;
-  letter-spacing: 0.005em;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.about-list-item {
-  display: inline-block;
 }
 
 .about-nav {
@@ -217,35 +246,12 @@ body {
   justify-content: flex-end;
 }
 
-/*================Where to see================*/
-
-.see,
-.seasons,
-.poster,
-.page-footer,
-.characters {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.see-title,
-.seasons-title,
-.poster-title,
-.characters-title {
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 1.22;
-  letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
-  text-align: center;
-  text-shadow: 6px 2px 5px rgb(0, 0, 0);
-  margin-bottom: 30px;
-}
-
+/*============================================Where to see====================================================*/
 .see-list {
   display: flex;
   column-gap: 40px;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .see-list-item {
@@ -260,45 +266,9 @@ body {
   object-fit: cover;
   width: 300px;
   height: 300px;
-
 }
 
-.see-list-item-text,
-.seasons-p,
-.actor-text,
-.address-list
-{
-  font-size: 17px;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-}
-
-
-.see-list-item-text {
-  margin-bottom: 20px;
-}
-
-.see-list-link {
-  display: inline-block;
-  font-size: 17px;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-shadow: 1px 1px 2px rgb(83, 83, 83);
-    color: rgb(255, 255, 255);
-    background-color: rgba(150, 150, 150, 0.514);
-    padding: 8px;
-    border: 1px solid rgba(6, 180, 142, 0.555);
-    border-radius: 15px;
-
-}
-
-
-
-
-/*================All seasons================*/
+/*==============================================All seasons=================================================*/
 
 .all-seasons {
   display: flex;
@@ -306,24 +276,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
+
 .seasons-list-item {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
   width: 250px;
   align-items: center;
-}
-
-.seasons-title-link {
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 1.22;
-  letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
-  text-align: center;
-  text-shadow: 3px 1px 3px rgb(0, 0, 0);
-  margin-bottom: 20px;
 }
 
 .seasons-img {
@@ -334,7 +295,8 @@ body {
 }
 
 /*================posters================*/
-.poster-title {
+
+.posters {
   margin-bottom: 50px;
 }
 
@@ -354,50 +316,22 @@ body {
   left: 0;
 }
 
-
-.poster-list {
+.poster-list, .poster-list2 {
   display: flex;
   gap: 20px;
   align-items: center;
   width: max-content; /* Робимо ширину достатньою для плавного руху */
   animation: marqueeLoop 90s linear infinite;
   transition: animation-duration 10s ease-in-out;
-}
-
-
-.poster-list2 {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  width: max-content; /* Робимо ширину достатньою для плавного руху */
-  animation: marqueeLoop2 90s linear infinite;
-  transition: animation-duration 10s ease-in-out;
-}
-/* Оновлені ключові кадри для зміни напрямку */
-@keyframes marqueeLoop2 {
-  0% {
-    transform: translateX(-50%);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-
-.poster-list-item {
   transition: transform 0.5s ease-in-out;
   white-space: nowrap;
 }
 
-/* Ефект збільшення при наведенні */
-.poster-list-item:hover {
-  transform: scale(1.6);
+.poster-list2 {
+  animation: marqueeLoop2 90s linear infinite;
 }
 
-/* Оновлені ключові кадри для зміни напрямку */
+/* зміна напрямку */
 @keyframes marqueeLoop {
   0% {
     transform: translateX(0);
@@ -410,7 +344,23 @@ body {
   }
 }
 
+/* зміна напрямку */
+@keyframes marqueeLoop2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
+/* Ефект збільшення при наведенні */
+.poster-list-item:hover {
+  transform: scale(1.6);
+}
 
 .poster-list-item-img {
   border-radius: 10px;
@@ -419,62 +369,17 @@ body {
   object-fit: cover;
 }
 
-.actor-title,
-.address-title
-{
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 1.22;
-  letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
-  text-align: center;
-  text-shadow: 3px 1px 3px rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
-/*================actors================*/
+/*==============================================actors==========================================================*/
 
 .about-actor {
   display: flex;
-  gap: 20px;
-
+  gap: 40px;
 }
+
 .actor-img {
   border-radius: 10px;
   max-width: 300px;
   margin-bottom: 10px;
-}
-
-.actor-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-.actor-list-item {
-display: inline-block;
-font-size: 13px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-shadow: 1px 1px 2px rgb(83, 83, 83);
-  color: rgb(255, 255, 255);
-  background-color: rgba(150, 150, 150, 0.514);
-  padding: 8px;
-  border: 1px solid rgba(6, 180, 142, 0.555);
-  border-radius: 15px;
-  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
-}
-
-.actor-list-item:hover {
-  background-color: rgba(168, 170, 170, 0.274);
-  border: 1px solid rgb(4, 209, 165);
-  background-color: rgba(204, 203, 203, 0.514);
-}
-
-.actor-text {
-  text-align: start;
-  text-indent: 3%;
-
 }
 
 .actor-text-div {
@@ -482,13 +387,38 @@ font-size: 13px;
   overflow: auto;
 }
 
-.actor {
-  margin-bottom: 30px;
+.actor-text-div::-webkit-scrollbar {
+  width: 6px;
+  /* Ширина вертикального скроллбара */
 }
-/*================fotter================*/
+.actor-text-div::-webkit-scrollbar-track {
+  background:  #3B3B3B; /* Цвет фона полосы прокрутки */
+  border-radius: 10px; /* Радиус для скругления углов */
+}
+/* Стилизация самой ручки (ползунка) прокрутки */
+.actor-text-div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+   /* Скругляем ручку */
+}
 
-.page-footer
-{background-color: #1d1c2a;}
+
+/*=================================================fotter========================================================*/
+
+.logo-footer {
+  background-color: transparent;
+  border: none;
+}
+
+.address-list {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.page-footer {
+  background-color: #1d1c2a;
+}
 
 .logo-footer {
 justify-content: center;
@@ -508,13 +438,10 @@ justify-content: center;
   100% { transform: rotate(10deg) scale(1); }
 }
 
-
-
 .btn-open-form {
   position: fixed;
   bottom: 40px; 
   right: 40px; 
-
 }
 
 .btn-open-form:hover .swing {
@@ -522,6 +449,9 @@ justify-content: center;
   filter: drop-shadow(1px 1px 5px rgb(4, 209, 165)); 
   animation: none; 
 }
+
+
+
 
 
 
@@ -557,6 +487,7 @@ justify-content: center;
   opacity: 0;
   pointer-events: none;
 }
+
 .is-open {
   opacity: 1;
   pointer-events: auto; /*клас для джаваскрипта, щоб повиртати видимість модальному вікну*/
@@ -582,7 +513,7 @@ justify-content: center;
   position: relative;
 }
 
-/*=====content-forma===*/
+/*=================================================content-forma===============================================*/
 
 .icon-close-button {
   fill: rgb(6, 180, 143);
@@ -621,7 +552,6 @@ justify-content: center;
 .form-label {
   display: block;
   margin-bottom: 5px;
-
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
@@ -664,7 +594,7 @@ justify-content: center;
   resize: none;
 }
 
-/*=====button-forma===*/
+/*=======================================button-forma==================================*/
 .button-forma {
   display: flex;
   justify-content: center;
@@ -672,10 +602,7 @@ justify-content: center;
 }
 
 .button-form {
-  font-weight: 400;
   font-size: 20px;
-  line-height: 1;
-  letter-spacing: -0.01em;
   text-shadow: 1px 1px 2px rgb(83, 83, 83);
   color: rgb(7, 202, 160);
   background-color: rgba(0, 0, 0, 0.425);
