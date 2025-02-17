@@ -385,21 +385,21 @@ body {
 .actor-text-div {
   max-height: 340px;
   overflow: auto;
+  padding-right: 35px;
+font-size: 19px;
 }
 
 .actor-text-div::-webkit-scrollbar {
-  width: 6px;
-  /* Ширина вертикального скроллбара */
+  width: 7px;
 }
 .actor-text-div::-webkit-scrollbar-track {
-  background:  #3B3B3B; /* Цвет фона полосы прокрутки */
-  border-radius: 10px; /* Радиус для скругления углов */
+  background:  #666666; 
+  border-radius: 10px; 
 }
-/* Стилизация самой ручки (ползунка) прокрутки */
+
 .actor-text-div::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(151, 151, 151);
   border-radius: 10px;
-   /* Скругляем ручку */
 }
 
 
