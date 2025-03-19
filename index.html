@@ -2,21 +2,16 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta
       name="description"
-      content="Information about the series The X-Files"
+      content="Інформація про серіал «Цілком таємно»"
     />
     <title>SerialWarm</title>
 
     <!-- кросбраузерність  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- шрифти-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,50 +20,53 @@
       rel="stylesheet"
     />
     <!-- Зовнішня таблиця стилів -->
-    <link rel="stylesheet" href="./css/sryles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
+    <header class="container">
+      <div class="header">
 
-    <header class="header">
-    <div class="container">
-    <nav>
+      <nav>
       <ul class="header-nav-list">
-        <li class="header-list-item">
-          <a class="logo" href="./index.html">Serial<span class="accent">&nbsp; worm</span>
+        <li>
+          <a class="btn" href="./index.html">Serial <span class="accent"> worm </span>
             <svg class="accent" width="30" height="30">
-              <use href="/images/symbol-defs.svg#worm"></use>
+              <use href="./css/symbol-defs.svg#worm"></use>
             </svg>
           </a>
         </li>
-        <li class="header-list-item" >
-          <a class="logo" href="#the-x-files">The <span class="accent">&nbsp;X files</span></a>
+        <li>
+          <a class="btn" href="#the-x-files">The <span class="accent">X files</span></a>
         </li> 
-        <li class="header-list-item">
-          <a class="button-item" href="#sites">Where to see</a>
+        <li>
+          <a class="btn" href="#sites">Where to see</a>
         </li>
-        <li class="header-list-item">
-          <a class="button-item" href="#seasons">All seasons</a>
+        <li>
+          <a class="btn" href="#seasons">All seasons</a>
         </li>
-        <li class="header-list-item">
-          <a class="button-item" href="#poster">Download poster</a>
+        <li>
+          <a class="btn" href="#poster">Download poster</a>
         </li>
-        <li class="header-list-item">
-          <a class="button-item" href="#actors">In the main roles</a>
+        <li >
+          <a class="btn" href="#actors">In the main roles</a>
         </li>
-        <li class="header-list-item">
-          <a class="button-item" href="#contacts">Contacts</a>
+        <li>
+          <a class="btn" href="#contacts">Contacts</a>
         </li>
       </ul>
-    </nav>
-    </div>
+      </nav>
+
+      </div>
     </header>
 
     <main>
-
-    <section class="section about">
-      <div class="container">
+      
+    <section class="about">
+      <div class="fon container">
+     
         <h1 class="title1" id="the-x-files">The <span class="accent">X files</span></h1>
+        
         <p class="about-text">
           «Цілком таємно» або «Секретні матеріали» — американський фантастичний телесеріал. Уперше був показаний телеканалом Fox 10 вересня 1993 року й завершився через 9 років — 19 травня 2002 року. 
         </p>
@@ -81,117 +79,135 @@
         <p class="about-text">          
           Перший сезон знімали у Ванкувері та на його околицях. Цей майданчик використовувався ще п'ять років, і лише з початку шостого сезону знімальна група переїхала в Лос-Анджелес, за проханням виконавця головної ролі Фокса Малдера — Девіда Духовни. 
         </p>
+
         <ul class="about-nav">
-          <li class="about-nav-list">
-            <a class="button-item" href="#Gillian">Gillian Anderson</a>
+          <li>
+            <a class="btn" href="#Gillian">Gillian Anderson</a>
           </li>
           <li>  
-            <a class="button-item" href="#David">David William Duchovny</a>
+            <a class="btn" href="#David">David William Duchovny</a>
           </li>
-        </ul>  
+        </ul> 
+        
       </div>
+
     </section>
 
     <section class="section">
       <div class="container">
+
         <h2 class="title2" id="sites">Where <span class="accent">to see</span></h2>
-        <ul class="see-list">
-          <li class="see-list-item">
-            <img class="see-list-item-img"
-              src="./images/675798.jpg"
-              alt="заставка серіалу" 
-            />
-            <div>
-              <h3 class="title3">Series in English</h3>
-              <p class="see-list-item-text">
-                Перегляд фільмів та серіалів англійською мовою - один із найкращих способів натренуватися розуміти носіїв англійської. Перевагами є те, що мовлення є природнім і переважно діалогічним.
-              </p>
+
+        <ul class="see-list-ul">
+          <li class="see-list">
+            <div class="see-list-div">
+              <img class="see-list-img"
+                src="./images/X-files.jpg"
+                alt="Заставка серіалу 'The X-Files' (англійською)"
+              />
+
+              <div class="see-list-text">
+                <h3 class="title3">Series in English</h3>
+                <p class="text">
+                  Перегляд фільмів та серіалів англійською мовою - один із найкращих способів натренуватися розуміти носіїв англійської. Перевагами є те, що мовлення є природнім і переважно діалогічним.
+                </p>
+              </div> 
+
+            </div>
+
               <div>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://www.channel4.com/programmes/the-x-files"
                   target="_blank">#channel4
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://www.sbs.com.au/ondemand/tv-series/the-x-files"
                   target="_blank">#sbs.com.au
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://www.dailymotion.com/video/x8jbu1i"
                   target="_blank">#dailymotion.com
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://uk.chili.com/content/the-x-files-1993/6cc00ac5-4ca3-40d6-8be3-0e462384fe1f"
                   target="_blank">#uk.chili.com
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://www.flicks.com.au/tv/the-xfiles-season-1/"
                   target="_blank">#flicks.com
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://www.imdb.com/title/tt0106179/"
                   target="_blank">#imdb.com
                 </a>
               </div>
-            </div>
+ 
           </li>
-          <li class="see-list-item">           
-            <img class="see-list-item-img"
-              src="./images/zRnB8am.jpg"
-              alt="заставка серіалу" 
-            />
-            <div>
-              <h3 class="title3">Series in Ukrainian</h3>
-              <p class="see-list-item-text">
-                Тобі більше не доведеться шукати підходящі кінотеатри, встигнути купити в касі або забронювати через інтернет. Все це залишилося позаду, а взамін великі перспективи дивитися фільми онлайн в хорошій HD якості українською мовою.
-              </p>
+
+          <li class="see-list">  
+            <div class="see-list-div">
+              <img class="see-list-img"
+                src="./images/x-foles-for-ukr.jpg"
+                alt="Заставка серіалу 'Цілком таємно' (українською)" 
+              />
+
+              <div class="see-list-text">
+                <h3 class="title3">Series in Ukrainian</h3>
+                <p class="text">
+                  Тобі більше не доведеться шукати підходящі кінотеатри, встигнути купити в касі або забронювати через інтернет. Все це залишилося позаду, а взамін великі перспективи дивитися фільми онлайн в хорошій HD якості українською мовою.
+                </p>
+              </div>
+
+             </div>
+
               <div> 
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://uaserials.com/85-cilkom-tayemno-sezon-1.html"
                   target="_blank">#uaserials.com
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html"
                   target="_blank">#uakino.me
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://uaserial.tv/the-x-files/season-1-aa"
                   target="_blank">#uaserial.tv
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://xfiles-ua.net/"
                   target="_blank">#xfiles-ua.net
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://eneyida.tv/1635-cilkom-tayemno-sekretni-materialy.html"
                   target="_blank">#eneyida.tv
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="http://moviestape.lat/katalog_serialiv/dramy/1958-cilkom-tajemno.html"
                   target="_blank">#moviestape.lat
                 </a>
-                <a class="button-item-wite"
+                <a class="btn-wite"
                   href="https://kinoukr.com/3323-cilkom-tayemno.html"
                   target="_blank">#kinoukr.com
                 </a>
 
               </div>
-            </div>
+
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="seasons">
+    <section class="section">
       <div class="container">
         <h2 class="title2" id="seasons">All <span class="accent">seasons</span></h2>
-        <ul class="all-seasons">
-          <li class="seasons-list-item">
+        <ul class="seasons">
+          <li class="seasons-list">
             <a class="title3" 
               href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html">1 season
             </a>
             <a 
               href="https://uakino.me/seriesss/detective_series/6648-sekretn-materali-clkom-tayemno.html">
-              <img  class="seasons-img"
+              <img class="seasons-img"
                 src="./images/1season.jpg"
                 alt="Обкладинка першого сезону"
               />
@@ -200,14 +216,14 @@
               Прем'єра пілотного епізоду відбулася 10 вересня 1993 року, він зібрав біля екранів телевізорів 12 мільйонів глядачів.
             </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6649-sekretn-materali-clkom-tayemno.html">2 season
               </a>            
               <a class="title3"
                 href="https://uakino.me/seriesss/detective_series/6649-sekretn-materali-clkom-tayemno.html">
               <img class="seasons-img"
-                src="./images/2 season.jpg"
+                src="./images/2season.jpg"
                 alt="Обкладинка другого сезону"
               />
               </a>
@@ -215,7 +231,7 @@
                 Другий сезон 21 січня 1995 року серіал отримав свій перший «Золотий глобус» в номінації за найкращий драматичний серіал.
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6650-sekretn-materali-clkom-tayemno.html">3 season
               </a>            
@@ -230,7 +246,7 @@
                 Прем'єрний епізод «Благословенний шлях» дебютував з рейтингом в 19.94 мільйони глядачів, що робить його одним з найпопулярніших серіалів сезону 1995 — 1996 США. 
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6651-sekretn-materali-clkom-tayemno.html">4 season
               </a>            
@@ -245,7 +261,7 @@
                 19 січня 1997 року серіал отримав свій другий «Золотий глобус», також в своїх номінаціях володарями «Золотого глобусу» стали Джілліан Андерсон та Девід Духовни.
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6652-sekretn-materali-clkom-tayemno.html">5 season
               </a>            
@@ -261,7 +277,7 @@
                 «Золотий глобус».
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6653-sekretn-materali-clkom-tayemno.html">6 season
               </a>            
@@ -277,7 +293,7 @@
                 таємно» стартував 8 листопада 1998 року на телеканалі Fox.
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6654-sekretn-materali-clkom-tayemno.html">7 season
               </a>            
@@ -290,7 +306,7 @@
               </a>
               <p class="text">Сьомий сезон стартував 7 листопада 1999 року.</p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6655-sekretn-materali-clkom-tayemno.html">8 season
               </a>            
@@ -303,7 +319,7 @@
               </a>
               <p class="text">Восьмий сезон стартував 5 листопада 2000 року.</p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6656-sekretn-materali-clkom-tayemno.html">9 season
               </a>            
@@ -318,7 +334,7 @@
                 Дев'ятий сезон «Цілком таємно» стартував 11 листопада 2001 року.
               </p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6657-sekretn-materali-clkom-tayemno.html">10 season
               </a>            
@@ -331,7 +347,7 @@
               </a>
               <p class="text">Десятий сезон стартував 24 січня 2016 року.</p>
           </li>
-          <li class="seasons-list-item">
+          <li class="seasons-list">
               <a class="title3" 
                 href="https://uakino.me/seriesss/detective_series/6658-sekretn-materali-clkom-tayemno.html">11 season
               </a>            
@@ -348,9 +364,9 @@
       </div>
     </section>
 
-    <section class="section poster">
-      <div class="container">
-        <h2 class="title2 posters" id="poster"><span class="accent">Download</span> posters</h2>
+    <section class="about">
+      <div class="container section poster">
+        <h2 class="title2" id="poster"><span class="accent">Download</span> posters</h2>
         <div class="content">
           <div class="marquee">
             <ul class="poster-list">
@@ -522,9 +538,9 @@
               </li>
               <li class="poster-list-item">
                 <a class="poster-list-item-download"  
-                href="./images/675798.jpg" target="_blank">
+                href="./images/1season.jpg" target="_blank">
                   <img  class="poster-list-item-img"
-                    src="./images/675798.jpg"
+                    src="./images/1season.jpg"
                     alt="Постер"
                   />
                 </a>
@@ -539,27 +555,27 @@
               </li>
               <li class="poster-list-item">
                 <a class="poster-list-item-download"  
-                href="./images/abdc4d96-20b7f30e220f98cbd21999b33598fcaf.jpg" target="_blank">
+                href="./images/x-foles-for-ukr.jpg" target="_blank">
                   <img  class="poster-list-item-img"
-                  src="./images/abdc4d96-20b7f30e220f98cbd21999b33598fcaf.jpg"
+                  src="./images/x-foles-for-ukr.jpg"
                   alt="Постер"
                   />
                 </a>
               </li>
               <li class="poster-list-item">
                 <a class="poster-list-item-download"  
-                href="./images/dd_009.jpg" target="_blank">
+                href="./images/Gilian_1.jpg" target="_blank">
                   <img  class="poster-list-item-img"
-                  src="./images/dd_009.jpg"
+                  src="./images/Gilian_1.jpg"
                   alt="Постер"
                   />
                 </a>
               </li>
               <li class="poster-list-item">
                 <a class="poster-list-item-download"  
-                href="./images/zRnB8am.jpg" target="_blank">
+                href="./images/Molder_3.jpg" target="_blank">
                   <img  class="poster-list-item-img"
-                  src="./images/zRnB8am.jpg" 
+                  src="./images/Molder_3.jpg" 
                   alt="Постер"
                   />
                 </a>
@@ -803,48 +819,48 @@
 
     <section class="section">
         <div class="container">
-          <h2 class="title2" id="actors">The main<span class="accent">characters</span></h2>
+          <h2 class="title2" id="actors">The main <span class="accent"> characters</span></h2>
 
           <div>
-            <h3 class="title3" id="Gillian">Gillian Anderson <span class="accent"> Dana Katherine Scully</h3>
+            <h3 class="title3" id="Gillian">Gillian Anderson <span class="accent"> Dana Katherine Scully</span></h3>
             <div class="about-actor">
               <div>
                 <img class="actor-img"
-                  src="/images/gillian-anderson_26.jpg"
+                  src="/images/Gilian_1.jpg"
                   alt="Джиліан Андерсен"
                 />
                 <div>
-                  <ul>
-                    <li class="button-item-wite">
-                      <a 
+                  <ul class="actor-link">
+                    <li>
+                      <a class="btn-wite"
                         href="https://www.instagram.com/gilliana/" target="_blank">#instagram
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://ua.kinorium.com/name/96/" 
                         target="_blank">#kinorium
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://suspilne.media/culture/773351-ak-zinki-uavlaut-seks-koli-mozut-buti-anonimnimi-u-vidavnictvi-se-odnu-storinku-vijde-knizka-dzillian-anderson/" target="_blank" >#suspilne
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://tsn.ua/glamur/zirka-sekretnih-materialiv-anderson-pro-svoyu-poyizdku-do-ukrayini-bombi-padayut-na-ditey-ya-bachila-na-vlasni-ochi-2424208.html" target="_blank">#glamur
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a
+                    <li>
+                      <a class="btn-wite"
                         href="https://www.bbc.com/ukrainian/articles/cr4096pdwvwo"
                         target="_blank">#bbc
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
-                        href="hhttps://uaserial.com/selection/all/actor-gillian-anderson/2"
+                    <li>
+                      <a class="btn-wite"
+                        href="https://uaserial.com/selection/all/actor-gillian-anderson/2"
                         target="_blank">#uaserial
                       </a>
                     </li>
@@ -882,42 +898,42 @@
 
               <div>
                 <img class="actor-img"
-                  src="./images/dd_009.jpg"
+                  src="./images/Molder_3.jpg"
                   alt="Девід Духовний"
                 />
                 <div>
-                  <ul>
-                    <li class="button-item-wite">
-                      <a 
+                  <ul class="actor-link">
+                    <li>
+                      <a class="btn-wite"
                         href="https://www.instagram.com/davidduchovny/" target="_blank">#instagram
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://chytomo.com/devid-dukhovnyj-ta-tom-henks-vohni-rampy-proty-drukarskykh-mashynok/" 
                         target="_blank">#chytomo
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://glamurchik.tochka.net/ua/dossie/677-devid-dukhovny/"
                         target="_blank">#glamurchik
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a
+                    <li>
+                      <a class="btn-wite"
                         href="https://womanel.com/shoubiznes/khto-devid-dukhovny-za-natsionalnistiu-i-chomu-vin-nazvav-sebe-ukraintsem/"
                         target="_blank">#womanel
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://www.yakaboo.ua/ua/author/view/Djevid_Duhovny?srsltid=AfmBOory80fcnuHTdX7ApIBUe9y8Cn63WdlWuYQohHbDA-0kh5SW2ySD"
                         target="_blank">#yakaboo
                       </a>
                     </li>
-                    <li class="button-item-wite">
-                      <a 
+                    <li>
+                      <a class="btn-wite"
                         href="https://trab.ardesto.cx.ua/articles/devid-duhovni-pravila-zhittja.html"
                         target="_blank">#ardesto
                       </a>
@@ -964,8 +980,7 @@
 
     </main>
 
-
-    <footer class="section page-footer">
+    <footer class="section about">
       <div class="container">
         <h3 class="title3" id="address">Contacts us</h3>
         <ul class="address-list">
@@ -978,44 +993,31 @@
           </li>
         </ul>
 
-        <a class="logo-footer" href="./index.html">Serial<span class="accent">&nbsp; worm </span>
+        <a class="btn btn-foot" href="./index.html">Serial<span class="accent">&nbsp; worm </span>
           <svg class="accent" width="30" height="30">
-            <use href="/images/symbol-defs.svg#worm"></use>
+            <use href="./css/symbol-defs.svg#worm"></use>
           </svg> knows all about the best serials.
         </a>
 
         <div class="btn-open-form">
           <svg class="swing" width="50" height="50">
-            <use href="/images/symbol-defs.svg#icon-coment"></use>
+            <use href="./css/symbol-defs.svg#icon-coment"></use>
           </svg>
         </div>
       </div>
     </footer>
 
     <div class="modal-overlay">
-      <div class="modal-window">
       
-        <form 
-          class="form" 
-          name="review" 
-          autocomplete="off">
+        <form class="form" name="review" autocomplete="off">
 
-          <button class="icon-close-button">
-            <svg class="icon-close-svg">
-              <use href="./images/symbol-defs.svg#icon-close"
-                height="15"
-                width="15">
-              </use>
-            </svg>
-          </button>
+          <svg class="icon-close-button">
+            <use href="./css/symbol-defs.svg#icon-close"></use>
+          </svg>
 
-          <label 
-            class="form-label"
-            for="user-name"
-            >Your name <sup class="star">*</sup>
-          </label>
+          <label class="label" for="user-name">Your name <sup class="star">*</sup></label>
           <input 
-            class="input-form" 
+            class="input" 
             id="user-name"
             type="text" 
             name="user-name" 
@@ -1023,13 +1025,9 @@
             required
           />
 
-          <label 
-            class="form-label"
-            for="user-email"
-            >Your email <sup class="star">*</sup>
-          </label>
+          <label class="label" for="user-email">Your email <sup class="star">*</sup></label>
           <input 
-            class="input-form" 
+            class="input" 
             id="user-email"
             type="email" 
             name="user-email" 
@@ -1037,14 +1035,9 @@
             required
           />
             
-          <label
-          class="form-label"
-          for="user-country">
-          Where are you from?
-          </label>
-
+          <label class="label" for="user-country">Where are you from?</label>
           <select
-            class="input-form"
+            class="input"
             id="user-country"
             name="user-country"
             >
@@ -1116,85 +1109,29 @@
           </select>
           
           <fieldset class="fieldset">
-            <legend class="legend">Would you recommend this series?</legend>
-
-            <ul>
-              <li>
-                <input 
-                  class="radio-recommend" name="recommend-series" 
-                  type="radio" 
-                  value="Yes" 
-                  id="radio-recommend-yes"
-                />
-                <label 
-                  class="recommend-label" for="radio-recommend-yes"
-                  >Yes
-                </label>
-              </li>
-              <li>
-                <input 
-                  class="radio-recommend" name="recommend-series"  
-                  type="radio" 
-                  value="No"
-                  id="radio-recommend-no"
-                />
-                <label 
-                  class="recommend-label"
-                  for="radio-recommend-no"
-                  >No
-                </label> 
-              </li>
-              <li>
-                <input 
-                  class="radio-recommend" name="recommend-series"  
-                  type="radio" 
-                  value="Didn't watch" 
-                  checked 
-                  id="radio-recommend-no-watched"
-                />
-                <label 
-                  class="recommend-label"
-                  for="radio-recommend-no-watched"
-                  >Didn't watch
-                </label>
-              </li>
-            </ul>
-
-          </fieldset>
-
-
-          <fieldset class="fieldset">
             <legend class="legend">What awards would you give this series</legend>
             <ul>
               <li>
-                <label 
-                  class="form-label"
-                  >
-          
+                <label class="label">          
                   <input 
-                    class="checkbox-input" 
                     type="checkbox" 
                     name="awards" 
                     value="Academy Awards" 
-                  />
-                
-                  Academy Awards
+                  />Academy Awards
                 </label>
               </li>
               <li>
-                <label class="form-label">
+                <label class="label">
                   <input 
-                    class="checkbox-input" 
                     type="checkbox" 
                     name="awards" 
-                    value="Golden Globe Awards" 
+                    value="Golden Globe Awards"
                   />Golden Globe Awards
                 </label>
               </li>
               <li>
-                <label class="form-label">
+                <label class="label">
                   <input 
-                    class="checkbox-input"
                     type="checkbox" 
                     name="awards" 
                     value="Grammy Awards" 
@@ -1202,9 +1139,8 @@
                 </label>
               </li>
               <li>
-                <label class="form-label">
+                <label class="label">
                   <input 
-                    class="checkbox-input" 
                     type="checkbox" 
                     name="awards" 
                     value="Emmyв Award" 
@@ -1212,9 +1148,8 @@
                 </label>
               </li>
               <li>
-                <label class="form-label">
+                <label class="label">
                   <input 
-                    class="checkbox-input"
                     id="checkbox-awards"  
                     type="checkbox" 
                     name="awards" 
@@ -1225,10 +1160,9 @@
             </ul>
           </fieldset>
 
-          <label class="form-label" for="review-textarea">Your review</label>
-
+          <label class="label" for="review-textarea">Your review</label>
             <textarea 
-              class="review-textarea"
+              class="textarea"
               id="review-textarea"
               name="user-review" 
               rows="2" 
@@ -1247,11 +1181,8 @@
           </div>
         </form>
 
-      </div>
     </div>
-
-
-    <script src="/js/main.js" defer type="module"></script>
+  <script src="/js/main.js" defer type="module"></script>
   </body>
 </html>
 

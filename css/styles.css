@@ -62,11 +62,11 @@ img {
 
 /* надаємо глобальний контейнер з падінгами, як з макету, та авто марджинами зліва-зправа*/
 .container {
-  max-width: 1750px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: hidden;
 }
 
 .section {
@@ -80,7 +80,7 @@ body {
   line-height: 1.3;
   letter-spacing: -0.02em;
   color: rgb(224, 224, 224);
-  background-color: #717077;
+  background-color: #222222;
   font-weight: 400;
 }
 
@@ -89,11 +89,11 @@ body {
   font-size: 40px;
   line-height: 1.22;
   letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
+  color:  rgb(8, 209, 166);
   text-align: center;
   text-shadow: 4px 4px 5px rgb(0, 0, 0);
-  margin-bottom: 20px;
-  max-width: 800px;
+  margin-bottom: 30px;
+  max-width: 760px;
 }
 
 .title2 {
@@ -101,40 +101,29 @@ body {
   font-size: 28px;
   line-height: 1.22;
   letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
+  color:  rgb(8, 209, 166);
   text-align: center;
   text-shadow: 6px 2px 5px rgb(0, 0, 0);
-  margin-bottom: 30px;
-  
+  margin-bottom: 40px;
 }
 
 .title3 {
   font-weight: 400;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 1.22;
   letter-spacing: 0.005em;
-  color: rgb(6, 180, 143);
+  color:  rgb(8, 209, 166);
   text-align: center;
   text-shadow: 3px 1px 3px rgb(0, 0, 0);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.text {
+  text-align: center;
+  text-indent: 3%;
 }
 
 /*====================================================header====================================================*/
-
-.about-text {
-  letter-spacing: 0.005em;
-  max-width: 800px;
-  text-indent: 3%;
-}
-
-.text, .see-list-item-text {
-  text-align: center;
-  text-indent: 3%;
-}
-.see-list-item-text {
-  margin-bottom: 20px;
-}
-
 .header {
   padding-top: 10px;
   position: fixed;
@@ -143,143 +132,132 @@ body {
 
 .header-nav-list {
   display: flex;
-  column-gap: 8px;
-  row-gap: 8px;
-  justify-content: flex-start;
+  gap: 9px;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.logo,
-.logo-footer {
+.btn {
+  height: 39px;
   display: flex;
   align-items: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-shadow: 1px 1px 2px rgb(83, 83, 83);
-  color: rgb(6, 180, 143);
+  color: rgb(8, 209, 166);
   background-color: rgb(0, 0, 0);
-  padding: 8px;
-  border: 1px solid rgb(6, 180, 143);
-  border-radius: 15px;
-  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
-  max-height: 38px;
+  padding: 10px 12px;
+  border: 1px solid rgba(8, 209, 166, 0.541);
+  border-radius: 10px;
+  transition: 350ms ease-in-out;
+}
+
+.btn:focus,
+.btn:hover {
+  color:rgb(9, 241, 191);
+  background-color: rgb(3, 59, 46);
+  border: 1px solid rgba(8, 209, 166, 0.815);
 }
 
 .accent {
-  color: rgb(173, 119, 2);
+  color: rgb(207, 144, 6);
   fill: rgb(173, 119, 2);
   transition: color 350ms ease-in-out;
+  padding: 2px;
 }
 
 .accent:hover,
 .accent:focus {
-  color: rgb(0, 0, 0);
-  fill: rgb(0, 0, 0);
+  color: rgb(250, 174, 9);
+  fill: rgb(250, 174, 9);
 }
 
-.button-item {
+/*==========================================about==========================================================*/
+.about {
+  padding-top: 20px;
+  background-image:  linear-gradient(to bottom, #1d1c2a, #433e5c);
+}
+
+.fon {
+  background-image: url(/images/fon.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+}
+
+.about-text {
+  letter-spacing: 0.005em;
+  max-width: 760px;
+  text-indent: 3%;
+}
+.about-nav {
+  justify-content: flex-end;
+  display: flex;
+  gap: 9px;
+}
+
+/*============================================Where to see====================================================*/
+
+.see-list-ul {
+  display: flex;
+  gap: 15px;
+}
+
+.see-list {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.see-list-div {
+  display: flex;
+  gap: 15px;
+}
+
+.see-list-img {
+  border-radius: 7px;
+  object-fit: cover;
+  width: 150px;
+  height: 200px;
+}
+
+.see-list-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+}
+
+.btn-wite {
   display: inline-block;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-shadow: 1px 1px 2px rgb(83, 83, 83);
-  color: rgb(6, 180, 143);
-  background-color: rgb(0, 0, 0);
-  padding: 8px;
-  border: 1px solid rgb(6, 180, 143);
-  border-radius: 15px;
-  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
-}
-
-.button-item:focus,
-.button-item:hover,
-.logo:hover,
-.logo:focus {
-  color: rgb(173, 119, 2);
-  background-color: rgb(6, 180, 143);
-  border: 1px solid rgb(0, 0, 0);
-}
-
-
-.button-item-wite {
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-shadow: 1px 1px 2px rgb(83, 83, 83);
   color: rgb(2, 231, 182);
   background-color: rgba(150, 150, 150, 0.514);
-  padding: 8px;
   border: 1px solid rgba(2, 231, 181, 0.534);
-  border-radius: 15px;
-  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
+  padding: 4px 12px;
+  border-radius: 8px;
   margin-bottom: 7px;
   margin-right: 5px;
-  transition: transform 0.3s ease, color 350ms ease-in-out, border-color 350ms ease-in-out, background-color 350ms ease-in-out;
-  }
+  transition: 350ms ease-in-out;
+}
 
-.button-item-wite:hover {
+.btn-wite:hover {
   transform: scale(1.05);
   background-color: rgba(204, 203, 203, 0.664);
   border: 1px solid rgb(4, 228, 179);
 }
 
-/*============================================about==========================================================*/
-.about {
-  background-color: #1d1c2a;
-  padding-top: 150px;
-  padding-bottom: 20px;
-  background-image: url(/images/фон\ варіант\ 3.jpg),
-  linear-gradient(to bottom, #1d1c2a, #433e5c);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
-}
-
-.about-nav {
-  display: flex;
-  gap: 15px;
-  justify-content: flex-end;
-}
-
-/*============================================Where to see====================================================*/
-.see-list {
-  display: flex;
-  column-gap: 40px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.see-list-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.see-list-item-img {
-  border-radius: 15px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-}
-
 /*==============================================All seasons=================================================*/
 
-.all-seasons {
+.seasons {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 50px;
 }
 
-.seasons-list-item {
+.seasons-list {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
@@ -288,25 +266,22 @@ body {
 }
 
 .seasons-img {
-  border: 5px solid black;
-  border-radius: 20px;
+  border: 3px solid black;
   width: 250px;
-  max-height: 350px;
+  height: 350px;
+  border-radius: 7px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px black;  
 }
 
 /*================posters================*/
-
-.posters {
-  margin-bottom: 50px;
-}
-
 .poster {
-  background-color: #1d1c2a;
   height: 590px;
   position: relative;
 }
 
 .content {
+  padding-top: 10px;
   height: 210px;
   display: flex;
 }
@@ -320,7 +295,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  width: max-content; /* Робимо ширину достатньою для плавного руху */
+  width: max-content; 
   animation: marqueeLoop 90s linear infinite;
   transition: animation-duration 10s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -376,9 +351,16 @@ body {
   gap: 40px;
 }
 
+.actor-link {
+  display: flex;
+  width: 270px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
 .actor-img {
-  border-radius: 10px;
-  max-width: 300px;
+  border-radius: 7px;
+  width: 270px;
   margin-bottom: 10px;
 }
 
@@ -386,7 +368,7 @@ body {
   max-height: 340px;
   overflow: auto;
   padding-right: 35px;
-font-size: 19px;
+  font-size: 19px;
 }
 
 .actor-text-div::-webkit-scrollbar {
@@ -402,29 +384,32 @@ font-size: 19px;
   border-radius: 10px;
 }
 
-
 /*=================================================fotter========================================================*/
+.footer {
+  background-color: #1d1c2a;
+}
 
-.logo-footer {
+.address-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.btn-foot {
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-foot:hover,
+.btn-foot:focus {
+  color:rgb(9, 241, 191);
   background-color: transparent;
   border: none;
 }
 
-.address-list {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.page-footer {
-  background-color: #1d1c2a;
-}
-
-.logo-footer {
-justify-content: center;
-}
-
-
+/* ================================кнопка відкриття форми=======  */
 .swing {
   animation: swing-animation 1s infinite alternate ease-in-out;
   transform-origin: center;
@@ -450,20 +435,7 @@ justify-content: center;
   animation: none; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========================================модальне вікно */
 
 .modal-overlay {
   position: fixed;
@@ -472,63 +444,48 @@ justify-content: center;
   width: 100%;
   height: 100%;
   z-index: 99999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: linear-gradient(
     to bottom,
     rgba(0, 8, 10, 0.616),
     rgb(0, 8, 10)
   );
-
-  transition: opacity 300ms ease-in-out;
+  transition: 300ms ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
 
 .is-open {
   opacity: 1;
-  pointer-events: auto; /*клас для джаваскрипта, щоб повиртати видимість модальному вікну*/
-}
-
-.modal-window {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(39, 39, 39, 0.849),
-    rgb(3, 97, 77)
-  );
-
-  border-radius: 15px;
-  border: 1px solid rgb(6, 180, 143);
-  padding: 50px;
-
-  max-width: 600px;
-  max-height: 900px;
+  pointer-events: auto; 
 }
 
 .form {
-  /*щоб спіймати кнопку хрестика*/
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 15, 15, 0.849),
+    rgb(2, 61, 48)
+  );
+  border-radius: 10px;
+  border: 1px solid rgba(6, 180, 142, 0.425);
+  padding: 40px;
+  width: 600px;
+  max-height: 900px;
   position: relative;
 }
-
-/*=================================================content-forma===============================================*/
 
 .icon-close-button {
   fill: rgb(6, 180, 143);
   background-color: transparent;
   border: none;
-  padding: 0;
-
-  /*обовязково скидати міжрядковий інтервал*/
-  line-height: 0;
-
-  /*позиціонування кнопки на абсолютах*/
+  padding: 15px;
   position: absolute;
-  top: -10px;
-  right: -290px;
-
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
   transition: fill 400ms ease-in-out;
 }
 
@@ -537,22 +494,9 @@ justify-content: center;
   fill: rgb(173, 119, 2);
 }
 
-.input-form {
-  background-color: rgba(255, 255, 255, 0.493);
-  border: 1px solid rgb(6, 180, 143);
-  border-radius: 10px;
-
-  padding-left: 10px;
-  margin-bottom: 20px;
-
-  width: 100%;
-  height: 50px;
-}
-
-.form-label {
+.label {
   display: block;
-  margin-bottom: 5px;
-  font-weight: 400;
+  margin-bottom: 8px;
   font-size: 17px;
   line-height: 1;
   letter-spacing: -0.01em;
@@ -560,17 +504,26 @@ justify-content: center;
   color: rgb(255, 255, 255);
 }
 
+.input {
+  background-color: rgba(255, 255, 255, 0.493);
+  border: 1px solid rgb(6, 180, 143);
+  border-radius: 7px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+}
+
 .star {
-  color: rgb(197, 22, 22);
+  color:  rgb(6, 180, 143);
 }
 
 .legend {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1;
   letter-spacing: -0.01em;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: rgb(4, 214, 169);
   margin-bottom: 8px;
 }
 
@@ -581,14 +534,12 @@ justify-content: center;
   margin-bottom: 20px;
 }
 
-.review-textarea {
+.textarea {
   background-color: rgba(255, 255, 255, 0.493);
   border: 1px solid rgb(6, 180, 143);
-  border-radius: 10px;
-
-  padding: 10px;
+  border-radius: 7px;
+  padding: 15px;
   margin-bottom: 20px;
-
   width: 100%;
   height: 90px;
   resize: none;
@@ -598,23 +549,22 @@ justify-content: center;
 .button-forma {
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 .button-form {
   font-size: 20px;
-  text-shadow: 1px 1px 2px rgb(83, 83, 83);
-  color: rgb(7, 202, 160);
-  background-color: rgba(0, 0, 0, 0.425);
   padding: 15px 30px;
-  border: 1px solid rgb(7, 199, 157);
-  border-radius: 15px;
-  transition: color 350ms ease-in-out, border-color 350ms ease-in-out,  background-color 350ms ease-in-out;
+  color: rgb(8, 209, 166);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(8, 209, 166, 0.541);
+  border-radius: 10px;
+  transition: 350ms ease-in-out;
 }
 
 .button-form:hover,
 .button-form:focus {
-  color: rgb(173, 119, 2);
-  background-color: rgb(9, 240, 190);
-  border: 1px solid rgb(173, 119, 2);
+  color:rgb(0, 255, 200);
+  background-color: rgb(5, 138, 107);
+  border: 1px solid rgba(8, 209, 166, 0.815);
 }

@@ -8,7 +8,7 @@ const userName = document.querySelector(`#user-name`);
 const userEmail = document.querySelector(`#user-email`);
 const nameError = document.createElement("p");
 nameError.style.color = "red";
-nameError.style.fontSize = "12px";
+nameError.style.fontSize = "10px";
 userName.insertAdjacentElement("afterend", nameError);
 
 submitFormBtn.disabled = true;
@@ -36,14 +36,12 @@ const submitForm = (event) => {
         alert("Будь ласка, заповніть всі обов'язкові поля. Ім'я повинно містити більше 2 літер.");
         return;
     }
-    alert("Дякуємо за ваш відгук");
     form.reset();
     validateForm();
 };
 
 const clearForm = () => {
     form.reset();
-    alert("Форму очищено");
     validateForm();
 };
 
