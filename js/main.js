@@ -21,7 +21,7 @@ clearFormBtn.addEventListener(`click`, ()=>{form.reset()});
 
 const modalSps = document.querySelector('.modal-sps'); 
 const modalSpsContent = document.querySelector('.modal-content'); 
-const closeSpsButton = document.querySelector('.icon-close-button'); 
+const closeSpsButton = document.querySelector('.icon-close-sps'); 
 
 form.addEventListener(`submit`, submitForm);
 function submitForm(event) {
@@ -116,8 +116,7 @@ const isClickOutside = modalWindow.contains(event.target) && !form.contains(even
 
 function closeFormByEsc (event) {
     if (event.code === 'Escape') {
-      form.classList.remove(`is-open`); {
-        isCloseWindow()}}}; 
+      form.classList.remove(`is-open`), isCloseWindow()}}; 
         
 //==================================== кнопка для прокрутки вікна===================
 
