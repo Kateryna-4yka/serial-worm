@@ -94,6 +94,8 @@ body {
   text-shadow: 4px 4px 5px rgb(0, 0, 0);
   margin-bottom: 30px;
   max-width: 760px;
+  padding-top: 100px;
+  transition: transform 0.5s ease;
 }
 
 .title2 {
@@ -105,6 +107,7 @@ body {
   text-align: center;
   text-shadow: 6px 2px 5px rgb(0, 0, 0);
   margin-bottom: 40px;
+  transition: transform 0.5s ease;
 }
 
 .title3 {
@@ -116,6 +119,11 @@ body {
   text-align: center;
   text-shadow: 3px 1px 3px rgb(0, 0, 0);
   margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.title1:hover, .title2:hover, .title3:hover {
+  transform: translateY(-5px);
 }
 
 .text {
@@ -125,7 +133,7 @@ body {
 
 /*====================================================header====================================================*/
 .header {
-  padding-top: 10px;
+  padding-top: 15px;
   position: fixed;
   z-index: 99;
 }
@@ -151,6 +159,7 @@ body {
 
 .btn:focus,
 .btn:hover {
+  transform: translateY(-5px); 
   color:rgb(9, 241, 191);
   background-color: rgb(3, 59, 46);
   border: 1px solid rgba(8, 209, 166, 0.815);
@@ -180,9 +189,6 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
-  padding-top: 100px;
-  padding-bottom: 30px;
-
 }
 
 .about-text {
@@ -194,6 +200,7 @@ body {
   justify-content: flex-end;
   display: flex;
   gap: 9px;
+  margin-bottom: 15px;
 }
 
 /*============================================Where to see====================================================*/
@@ -220,6 +227,11 @@ body {
   object-fit: cover;
   width: 150px;
   height: 200px;
+  transition: transform 0.5s ease;
+}
+
+.see-list-img:hover {
+  transform: translateY(-5px); 
 }
 
 .see-list-text {
@@ -263,6 +275,11 @@ body {
   row-gap: 8px;
   width: 250px;
   align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.seasons-list:hover {
+  transform: translateY(-5px);
 }
 
 .seasons-img {
@@ -372,15 +389,16 @@ body {
 }
 
 .actor-text-div::-webkit-scrollbar {
-  width: 7px;
+  width: 20px;
+  cursor: pointer;
 }
 .actor-text-div::-webkit-scrollbar-track {
-  background:  #666666; 
+  background:  #6666661a; 
   border-radius: 10px; 
 }
 
 .actor-text-div::-webkit-scrollbar-thumb {
-  background: rgb(151, 151, 151);
+  background: rgba(151, 151, 151, 0.164);
   border-radius: 10px;
 }
 
@@ -413,9 +431,10 @@ body {
 .swing {
   animation: swing-animation 1s infinite alternate ease-in-out;
   transform-origin: center;
-  fill: rgb(255, 255, 255);
+  fill: rgb(208, 215, 215);
   filter: drop-shadow(5px 5px 5px rgb(110, 110, 110));
-  transition: transform 0.3s ease, filter 0.3s ease; /* Додаємо плавний перехід */
+  transition: transform 0.3s ease, filter 0.3s ease; 
+  cursor: pointer;
 }
 
 @keyframes swing-animation {
@@ -568,3 +587,153 @@ body {
   background-color: rgb(5, 138, 107);
   border: 1px solid rgba(8, 209, 166, 0.815);
 }
+
+
+/*=======================================вікно подяки=================================*/
+
+.modal-sps{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 8, 10, 0.616),
+    rgb(0, 8, 10)
+  );
+  transition: 300ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-sps.is-open {
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+.modal-content {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 15, 15, 0.516),
+    rgba(2, 61, 48, 0.64)
+  );
+  border-radius: 10px;
+  padding: 100px 80px 50px  80px;
+  width: 400px;
+  max-height: 900px;
+  position: relative;
+}
+
+.icon-x {
+  fill: rgb(6, 180, 143);
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  transition: fill 400ms ease-in-out;
+}
+
+/* =================================кнопка для прокрутки вікна */
+  
+.icon-arrow {
+  position: fixed;
+  z-index: 1000;
+  bottom: 150px;
+  right: 40px;
+}
+
+.icon-arrow-up {
+  fill: #3B302B;
+  stroke: #3B302B;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(173, 119, 2, 0.746);
+  border-radius: 50%;
+  transform: rotate(90deg);
+  padding: 7px;
+  filter: drop-shadow(0 2px 5px rgb(110, 110, 110));   
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  opacity: 0;
+  pointer-events: none; 
+  animation: bounce 2s ease-in-out infinite;
+}
+  
+.icon-arrow-up:hover {
+  background: rgb(173, 119, 2);
+  transform: scale(1.4) rotate(90deg); 
+  animation: none; 
+}
+
+.icon-arrow.visible .icon-arrow-up {
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+/* Анімація для підстрибування кнопки, яка повертає користувача на верх сторінки*/
+@keyframes bounce {
+  0% {
+      transform: translateY(0) rotate(90deg); 
+  }
+  50% {
+      transform: translateY(-30px) rotate(90deg); 
+  }
+  100% {
+      transform: translateY(0) rotate(90deg); 
+  }
+}
+
+
+
+.invalid {
+  border: 1px solid rgb(170, 92, 92);  
+  background-color: #f8d7daad;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================адапртація під планшети та декстопи ====================*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+  }
+  
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
