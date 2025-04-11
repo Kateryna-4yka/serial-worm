@@ -123,7 +123,7 @@ function closeFormByEsc (event) {
 const scrollButton = document.querySelector('.icon-arrow');
 
 function checkScrollPosition() {
-    if (window.scrollY > 300) { 
+    if (window.scrollY > 100) { 
         scrollButton.classList.add('visible');
     } else {
         scrollButton.classList.remove('visible');
